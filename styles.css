@@ -27,8 +27,8 @@
   --ff-mono: 'JetBrains Mono', ui-monospace, monospace;
 
   /* Scale */
-  --max-w: 1600px;
-  --gutter: 56px;
+  --max-w: 1280px;
+  --gutter: 48px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
