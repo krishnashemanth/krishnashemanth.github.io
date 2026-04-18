@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The $1M project I killed on purpose | KrishnaS Hemanth</title>
+<meta name="description" content="Case study: recommending termination of a $1M AI initiative during discovery. PHI/PII compliance blockers and negative ROI." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" type="image/png" href="./assets/favicon.png">
+</head>
+<body>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-brand"><img src="./assets/Logo.png" alt="KrishnaS Hemanth" class="nav-logo"><small>PM · AI · Regulated SaaS</small></a>
+    <div class="nav-links">
+      <a href="./index.html" class="active">Work</a>
+      <a href="./manifesto.html">Principles</a>
+      <a href="./about.html">About</a>
+      <a href="./resume.html">Resume</a>
+    </div>
+    <a href="mailto:krishnashemanth@gmail.com" class="nav-cta"><span class="dot"></span> Get in touch</a>
+  </div>
+</nav>
+
+<main>
+  <header class="cs-header">
+    <div class="container">
+      <p class="kicker" style="margin-bottom:24px;"><a href="./index.html" style="color:var(--ink-3);">← All work</a> &nbsp;·&nbsp; Case 03 of 04</p>
+      <div class="cs-meta-row">
+        <span>Quantiphi</span><span>Healthcare / Life Sciences</span><span>Sr Business Analyst</span><span>2023 · Discovery phase</span>
+      </div>
+      <h1 class="cs-title">The $1M project I killed <em>on purpose</em>.</h1>
+      <p class="cs-dek">
+        A well-scoped, technically exciting AI initiative. Compliance blockers we'd have hit at integration. A recommendation to terminate, before a single sprint was burned.
+      </p>
+    </div>
+  </header>
+
+  <section class="container" style="padding:56px 0 24px;">
+    <div class="outcomes" style="grid-template-columns:repeat(3,1fr);">
+      <div class="outcome"><div class="v"><em>$1M</em></div><div class="l">Engineering spend<br/>avoided</div></div>
+      <div class="outcome"><div class="v"><em>0</em></div><div class="l">Sprints<br/>wasted</div></div>
+      <div class="outcome"><div class="v"><em>2 wks</em></div><div class="l">To surface<br/>and recommend kill</div></div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">01</span>The setup</div>
+        <div class="prose">
+          <h2 class="cs-h">Everyone wanted this one to work.</h2>
+          <p>A healthcare client asked us to scope an AI system that would aggregate patient-level data across provider networks to surface care-gap opportunities. Leadership was bullish. Engineering had a clear architecture. The pilot would have hit $1M in commitments before the first integration sprint.</p>
+          <p>My job in discovery was to de-risk, not to cheerlead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">02</span>What surfaced</div>
+        <div class="prose">
+          <h2 class="cs-h">Two weeks in, I found the math didn't work.</h2>
+          <p>The data sources the system needed contained PHI and PII that couldn't leave the originating networks without BAA renegotiation — a 6-to-12 month legal path with uncertain outcome. Even with data in place, the ROI model broke: projected uplift on care-gap closure priced against operating cost fell below the break-even line in every scenario I could build.</p>
+          <div class="callout">
+            <strong>The uncomfortable finding:</strong> the product could ship. It could be demo'd. It could not be sold sustainably, and it could not be operated without creating compliance exposure that outweighed any upside.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">03</span>The recommendation</div>
+        <div class="prose">
+          <h2 class="cs-h">Kill it. Write down why. Move the team.</h2>
+          <p>I wrote a one-page kill memo: compliance blockers, revised ROI model, alternatives considered. I presented it to the steering group expecting pushback. I got questions — good ones — and then a decision to terminate. The team rotated onto a parallel initiative that shipped three months later.</p>
+          <div class="pullquote">"ROI outweighs novelty. Demos don't ship — defensible economics do."</div>
+          <p>This is the case study I'm most proud of. Anyone can ship features. Not everyone will recommend against shipping when the org has already imagined the launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">04</span>Lessons</div>
+        <div class="prose">
+          <h2 class="cs-h">What this taught me about discovery.</h2>
+          <p><strong>Compliance isn't a Phase 2 problem.</strong> In regulated domains, the legal path determines the critical path. Validate BAAs, DPAs, and data-residency before you validate the feature.</p>
+          <p><strong>ROI modeling is a PM deliverable.</strong> If you can't draw the unit economics in discovery, you can't defend them in executive review. Learn the spreadsheet.</p>
+          <p><strong>The kill memo is a PM artifact.</strong> A crisp, written recommendation against shipping is one of the hardest and most valuable things a PM produces. Most don't. The ones who do become the ones leadership trusts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="border-top:1px solid var(--rule); padding:56px 0 80px;">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:16px;">
+        <a href="./manifesto.html" class="link-arrow" style="font-size:18px;">Read the principles that guide this <span>→</span></a>
+        <a href="./index.html" class="kicker" style="color:var(--ink-3);">← All work</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-grid">
+        <div>
+          <img src="./assets/Logo_transparent.png" alt="KrishnaS Hemanth" class="footer-logo">
+          <p class="kicker" style="color:var(--ink-4); margin-bottom:20px;">Let's talk</p>
+          <h2 class="footer-h">Looking for a PM who ships AI<br/>that <em>actually works?</em></h2>
+          <a href="mailto:krishnashemanth@gmail.com" class="btn btn-primary" style="background:var(--accent); color:var(--paper); margin-top:24px;">krishnashemanth@gmail.com <span class="arrow">→</span></a>
+        </div>
+        <div>
+          <p class="kicker" style="color:var(--ink-4); margin-bottom:20px;">Channels</p>
+          <ul class="footer-contact-list">
+            <li><span class="k">Email</span><a href="mailto:krishnashemanth@gmail.com">krishnashemanth@gmail.com</a></li>
+            <li><span class="k">LinkedIn</span><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">linkedin.com/in/krishnashemanth</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+      </div>
+    </div>
+  </footer>
+</main>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

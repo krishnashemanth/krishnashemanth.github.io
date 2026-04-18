@@ -1,0 +1,9 @@
+# Exclude old archive versions
+_archive/
+
+# Exclude AI assistant config
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db

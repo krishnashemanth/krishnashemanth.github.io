@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Clinical AI for Bayer · 0→1 | KrishnaS Hemanth</title>
+<meta name="description" content="Built a clinical AI radiology platform for Bayer, FDA SaMD compliant. NLP 68→88%, $500K+ ARR in 6 months." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" type="image/png" href="./assets/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-brand"><img src="./assets/Logo.png" alt="KrishnaS Hemanth" class="nav-logo"><small>PM · AI · Regulated SaaS</small></a>
+    <div class="nav-links">
+      <a href="./index.html" class="active">Work</a>
+      <a href="./manifesto.html">Principles</a>
+      <a href="./about.html">About</a>
+      <a href="./resume.html">Resume</a>
+    </div>
+    <a href="mailto:krishnashemanth@gmail.com" class="nav-cta"><span class="dot"></span> Get in touch</a>
+  </div>
+</nav>
+
+<main>
+  <header class="cs-header">
+    <div class="container">
+      <p class="kicker" style="margin-bottom:24px;"><a href="./index.html" style="color:var(--ink-3);">← All work</a> &nbsp;·&nbsp; Case 02 of 04</p>
+      <div class="cs-meta-row">
+        <span>Quantiphi × Bayer</span><span>Clinical Radiology AI</span><span>Sr Business Analyst</span><span>2023–24</span>
+      </div>
+      <h1 class="cs-title">
+        A clinical AI that <em>clinicians actually trusted</em>.
+      </h1>
+      <p class="cs-dek">
+        0→1 radiology platform, multi-tenant, FDA SaMD-compliant. We pivoted the MVP from speed-first to interpretability-first — and adoption followed.
+      </p>
+    </div>
+  </header>
+
+  <section class="container" style="padding:56px 0 24px;">
+    <div class="outcomes">
+      <div class="outcome"><div class="v"><em>$500K+</em></div><div class="l">New ARR<br/>6 months post-launch</div></div>
+      <div class="outcome"><div class="v"><em>68→88%</em></div><div class="l">NLP accuracy<br/>structured feedback loops</div></div>
+      <div class="outcome"><div class="v"><em>20+</em></div><div class="l">Clinical interviews<br/>15+ hospital systems</div></div>
+      <div class="outcome"><div class="v"><em>4,000+</em></div><div class="l">Manual hours<br/>eliminated / yr</div></div>
+      <div class="outcome"><div class="v"><em>FDA</em></div><div class="l">SaMD compliant<br/>multi-tenant</div></div>
+      <div class="outcome"><div class="v"><em>Gemini</em></div><div class="l">Foundation model<br/>+ RAG + HITL</div></div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">01</span>The problem</div>
+        <div class="prose">
+          <h2 class="cs-h">Radiologists were drowning in report generation.</h2>
+          <p>Post-scan, radiologists at Bayer's partner hospitals were spending hours structuring narrative findings into reports that downstream clinicians, billing, and QA all needed. Existing AI assistants were fast — and ignored. The assumption was that <em>speed</em> was the win. Discovery told a different story.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">02</span>Discovery</div>
+        <div class="prose">
+          <h2 class="cs-h">20+ clinical interviews, 15+ hospital systems.</h2>
+          <p>We ran structured interviews with radiologists, referring clinicians, and QA leads. The pattern was unambiguous: they didn't trust opaque outputs. A model that suggested a finding without showing <strong>why</strong> got dismissed. A model 15% slower but that surfaced source imagery regions, cited prior scans, and flagged uncertainty got adopted.</p>
+          <div class="pullquote">
+            "I won't sign anything I can't defend. Show me what the model saw."
+          </div>
+          <p>We pivoted the MVP. <strong>Interpretability first, speed second.</strong> The product spec changed in week four — and that was the week the project started working.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">03</span>Execution</div>
+        <div class="prose">
+          <h2 class="cs-h">Build for adoption, not for demo day.</h2>
+          <p>The rebuilt MVP shipped with: region-level evidence highlighting, confidence intervals per finding, one-click model-feedback capture, and an audit log aligned to FDA SaMD requirements. We drove NLP accuracy from 68% to 88% through structured feedback loops — radiologists flagged errors inline; those corrections flowed back into prompt tuning and edge-case handling within the sprint.</p>
+          <div class="callout">
+            <strong>The compliance decision:</strong> controlled automation over full autonomy. Every AI-generated report drafted, never submitted. Clinician sign-off was the spec, not an afterthought.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">04</span>Outcome</div>
+        <div class="prose">
+          <h2 class="cs-h">$500K+ ARR in six months. 4,000+ manual hours eliminated annually.</h2>
+          <p>The platform launched across Bayer's partner network. ARR surpassed $500K within six months — faster than the original velocity-first spec projected, because adoption was the constraint, not feature count. Downstream, the structured data pipeline we designed eliminated <strong>4,000+ manual hours per year</strong> of post-processing across partner sites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">05</span>My role</div>
+        <div>
+          <h2 class="cs-h">What I owned.</h2>
+          <div class="role-list">
+            <div class="role-item"><div class="k">0→1 discovery</div><div>20+ clinical interviews, 15+ hospital systems, synthesis into 3 JTBD clusters.</div></div>
+            <div class="role-item"><div class="k">MVP pivot</div><div>Reframed speed-first spec into interpretability-first. Pitched to exec team; authored revised PRD.</div></div>
+            <div class="role-item"><div class="k">Regulatory</div><div>Mapped FDA SaMD + HIPAA requirements into acceptance criteria. Partnered with compliance.</div></div>
+            <div class="role-item"><div class="k">Model iteration</div><div>Structured feedback loops, prompt tuning guidance, edge-case taxonomy. 68 → 88% accuracy.</div></div>
+            <div class="role-item"><div class="k">GTM</div><div>Rollout sequencing across partner hospitals, adoption telemetry, clinician enablement.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="border-top:1px solid var(--rule); padding:56px 0 80px;">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:16px;">
+        <a href="./case-killed-project.html" class="link-arrow" style="font-size:18px;">Next case · The $1M I killed on purpose <span>→</span></a>
+        <a href="./index.html" class="kicker" style="color:var(--ink-3);">← All work</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-grid">
+        <div>
+          <img src="./assets/Logo_transparent.png" alt="KrishnaS Hemanth" class="footer-logo">
+          <p class="kicker" style="color:var(--ink-4); margin-bottom:20px;">Let's talk</p>
+          <h2 class="footer-h">Looking for a PM who ships AI<br/>that <em>actually works?</em></h2>
+          <a href="mailto:krishnashemanth@gmail.com" class="btn btn-primary" style="background:var(--accent); color:var(--paper); margin-top:24px;">krishnashemanth@gmail.com <span class="arrow">→</span></a>
+        </div>
+        <div>
+          <p class="kicker" style="color:var(--ink-4); margin-bottom:20px;">Channels</p>
+          <ul class="footer-contact-list">
+            <li><span class="k">Email</span><a href="mailto:krishnashemanth@gmail.com">krishnashemanth@gmail.com</a></li>
+            <li><span class="k">LinkedIn</span><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">linkedin.com/in/krishnashemanth</a></li>
+            <li><span class="k">Resume</span><a href="./resume.html">View & download →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+      </div>
+    </div>
+  </footer>
+</main>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

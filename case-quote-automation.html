@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Quote Automation · Symplr | KrishnaS Hemanth</title>
+<meta name="description" content="Case study: LLM + RAG quote automation at Symplr. 38% faster turnaround, 1.65× analyst throughput, zero SLA breaches." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" type="image/png" href="./assets/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-brand"><img src="./assets/Logo.png" alt="KrishnaS Hemanth" class="nav-logo"><small>PM · AI · Regulated SaaS</small></a>
+    <div class="nav-links">
+      <a href="./index.html" class="active">Work</a>
+      <a href="./manifesto.html">Principles</a>
+      <a href="./about.html">About</a>
+      <a href="./resume.html">Resume</a>
+    </div>
+    <a href="mailto:krishnashemanth@gmail.com" class="nav-cta"><span class="dot"></span> Get in touch</a>
+  </div>
+</nav>
+
+<main>
+
+  <header class="cs-header">
+    <div class="container">
+      <p class="kicker" style="margin-bottom:24px;"><a href="./index.html" style="color:var(--ink-3);">← All work</a> &nbsp;·&nbsp; Case 01 of 04</p>
+      <div class="cs-meta-row">
+        <span>Symplr</span><span>Healthcare GRC SaaS</span><span>Product Owner</span><span>2026 · Ongoing</span>
+      </div>
+      <h1 class="cs-title">
+        Quote automation, built for the humans who <em>still sign off</em>.
+      </h1>
+      <p class="cs-dek">
+        An LLM + RAG pipeline cut data entry per quote by 88% and scaled analyst capacity 1.65x, without taking the human out of compliance.
+      </p>
+    </div>
+  </header>
+
+  <!-- At a glance -->
+  <section class="container" style="padding:56px 0 24px;">
+    <div class="outcomes">
+      <div class="outcome"><div class="v"><em>38%</em></div><div class="l">Faster turnaround<br/>3.2 → 1.5 days</div></div>
+      <div class="outcome"><div class="v"><em>88%</em></div><div class="l">Less data entry<br/>8 min → 1 min / quote</div></div>
+      <div class="outcome"><div class="v"><em>1.65×</em></div><div class="l">Analyst throughput<br/>190 → 314 quotes/mo</div></div>
+      <div class="outcome"><div class="v"><em>$5–7M</em></div><div class="l">Savings identified<br/>enterprise hospital POC</div></div>
+      <div class="outcome"><div class="v"><em>0</em></div><div class="l">SLA breaches<br/>post-launch</div></div>
+      <div class="outcome"><div class="v"><em>0</em></div><div class="l">New headcount<br/>needed</div></div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">01</span>The problem</div>
+        <div class="prose">
+          <h2 class="cs-h">Analysts were the bottleneck. So was compliance review.</h2>
+          <p>Enterprise-tier quotes averaged <strong>3.2 days</strong> to turn around, not because analysts were slow, but because every quote demanded reconciling unstructured vendor PDFs against a structured pricing matrix, then routing for compliance sign-off. Doubling throughput meant doubling headcount. Neither the unit economics nor the hiring pipeline supported that.</p>
+          <p>Leadership wanted "AI to fix this." The instinct most PMs would follow: ship a model that generates the quote end-to-end. In a GRC product, that instinct is <em>wrong</em>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discovery -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">02</span>Discovery</div>
+        <div class="prose">
+          <h2 class="cs-h">Shadowed 12 analysts. Read the SOPs. Asked what breaks.</h2>
+          <p>I spent two weeks embedded with the quote team across three offices. The pattern was consistent: analysts weren't slow on <em>decisions</em>, they were slow on <em>extraction</em>, manually pulling SKUs, pricing tiers, and contract terms out of 40-page PDFs so a human could apply judgment.</p>
+          <div class="pullquote">
+            "The AI doesn't need to price the quote. It needs to hand me a clean table so I can price it in two minutes instead of twenty."
+          </div>
+          <p>That reframe changed the scope. We weren't automating pricing — we were automating <strong>data preparation</strong>, with the analyst still making the call and signing the quote.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">03</span>Approach</div>
+        <div class="prose">
+          <h2 class="cs-h">LLM + RAG for extraction. Humans for judgment.</h2>
+          <p>The architecture: a document-ingest pipeline parsed incoming PDFs, RAG retrieved the relevant pricing-matrix rows from our product catalog, and an LLM structured the extracted data into a validated table. The analyst saw the table pre-filled, with confidence scores, field-level provenance, and low-confidence rows flagged for manual review.</p>
+          <div class="callout">
+            <strong>The non-negotiable constraint:</strong> every quote goes through human validation before it leaves the building. Compliance needed signatures, not model outputs. HITL wasn't a feature; it was the contract.
+          </div>
+          <p>Engineering wanted to start with a fine-tuned model. I pushed back — we had zero labeled data and a 6-week pilot window. <strong>RAG first, fine-tune later</strong> if the baseline needed it. It didn't.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diff -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">04</span>The shift</div>
+        <div>
+          <h2 class="cs-h">Before → after, in the only unit that matters.</h2>
+          <div class="diff-box">
+            <div class="diff-row minus"><span>−</span><span>3.2 days avg turnaround</span><span class="label">before</span></div>
+            <div class="diff-row plus"><span>+</span><span>1.5 days avg turnaround</span><span class="label">after · 6 wks</span></div>
+            <div class="diff-row" style="height:16px;"></div>
+            <div class="diff-row minus"><span>−</span><span>8 min data entry / quote</span><span class="label">before</span></div>
+            <div class="diff-row plus"><span>+</span><span>1 min review / quote</span><span class="label">after</span></div>
+            <div class="diff-row" style="height:16px;"></div>
+            <div class="diff-row minus"><span>−</span><span>190 quotes / analyst / mo</span><span class="label">before</span></div>
+            <div class="diff-row plus"><span>+</span><span>314 quotes / analyst / mo</span><span class="label">after</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I did -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">05</span>My role</div>
+        <div>
+          <h2 class="cs-h">What I owned on this build.</h2>
+          <div class="role-list">
+            <div class="role-item"><div class="k">Discovery</div><div>12 analyst shadowing sessions, SOP audit, workflow mapping with ops lead.</div></div>
+            <div class="role-item"><div class="k">Scoping</div><div>Reframed ambiguous "AI automation" ask into extraction-first HITL architecture. Wrote the PRD.</div></div>
+            <div class="role-item"><div class="k">Prioritization</div><div>WSJF against 5 competing initiatives; pitched and defended sequencing to leadership.</div></div>
+            <div class="role-item"><div class="k">Delivery</div><div>Cross-functional execution with eng, QA, CS, compliance. Zero SLA breaches on shared OKRs.</div></div>
+            <div class="role-item"><div class="k">Measurement</div><div>Pendo funnel telemetry + analyst throughput instrumentation. Weekly review cadence.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I learned -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-section-grid">
+        <div class="cs-section-label"><span class="num">06</span>Lessons</div>
+        <div class="prose">
+          <h2 class="cs-h">Three things I'd tell the next PM on this project.</h2>
+          <p><strong>The obvious AI build is usually wrong.</strong> End-to-end automation demos well. In a compliance-bound domain, it fails adoption. Find the unglamorous middle of the workflow and automate that.</p>
+          <p><strong>Confidence scores are a UX decision, not a model one.</strong> What threshold flags a row for review? Who owns overrides? How do analysts report a model mistake? Those were PRD questions, not eng questions.</p>
+          <p><strong>The best metric was analyst-reported.</strong> "I can breathe now" from one of the leads mattered more than the throughput number. Culture-of-adoption is the leading indicator; throughput is the lag.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next case -->
+  <section class="section" style="border-top:1px solid var(--rule); padding:56px 0 80px;">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:16px;">
+        <a href="./case-bayer-radiology.html" class="link-arrow" style="font-size:18px;">
+          Next case · Clinical AI for Bayer <span>→</span>
+        </a>
+        <a href="./index.html" class="kicker" style="color:var(--ink-3);">← All work</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-grid">
+        <div>
+          <img src="./assets/Logo_transparent.png" alt="KrishnaS Hemanth" class="footer-logo">
+          <p class="kicker" style="color:var(--ink-4); margin-bottom:20px;">Let's talk</p>
+          <h2 class="footer-h">Looking for a PM who ships AI<br/>that <em>actually works?</em></h2>
+          <p class="footer-dek">Actively interviewing. Senior PM roles at product-first companies in B2B SaaS, AI-native, healthcare, and GRC.</p>
+          <a href="mailto:krishnashemanth@gmail.com" class="btn btn-primary" style="background:var(--accent); color:var(--paper);">krishnashemanth@gmail.com <span class="arrow">→</span></a>
+        </div>
+        <div>
+          <p class="kicker" style="color:var(--ink-4); margin-bottom:20px;">Channels</p>
+          <ul class="footer-contact-list">
+            <li><span class="k">Email</span><a href="mailto:krishnashemanth@gmail.com">krishnashemanth@gmail.com</a></li>
+            <li><span class="k">LinkedIn</span><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">linkedin.com/in/krishnashemanth</a></li>
+            <li><span class="k">Resume</span><a href="./resume.html">View & download →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
