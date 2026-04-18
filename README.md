@@ -1,6 +1,6 @@
 # KrishnaS Hemanth | Product Manager Portfolio
 
-![Portfolio Preview](./assets/og.png)
+![Portfolio Preview](./assets/logo.png)
 
 This repository contains the source code for my professional portfolio, available live at **[krishnashemanth.github.io](https://krishnashemanth.github.io)**. 
 
