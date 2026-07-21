@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Compliance Content AI · Case Study | KrishnaS Hemanth</title>
+<meta name="description" content="Case study: a $0, 4-week AI proof of concept that drafts healthcare compliance question sets from federal regulations, before asking for the build budget." />
+<link rel="icon" type="image/png" href="./assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://krishnashemanth.github.io/case-compliance-content-ai.html">
+<meta property="og:title" content="Compliance Content AI · Case Study | KrishnaS Hemanth">
+<meta property="og:description" content="Case study: a $0, 4-week AI proof of concept that drafts healthcare compliance question sets from federal regulations, before asking for the build budget.">
+<meta property="og:image" content="https://krishnashemanth.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Compliance Content AI · Case Study | KrishnaS Hemanth">
+<meta name="twitter:description" content="Case study: a $0, 4-week AI proof of concept that drafts healthcare compliance question sets from federal regulations, before asking for the build budget.">
+<meta name="twitter:image" content="https://krishnashemanth.github.io/assets/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./nav-scroll.js"></script>
+</head>
+<body>
+
+<nav class="v2-nav">
+  <div class="v2-nav-inner">
+    <a href="./index.html" class="v2-brand">KrishnaS Hemanth<span class="dot">.</span> <small>PM · AI · Regulated SaaS</small></a>
+    <div class="v2-links">
+      <a href="./index.html#work" class="active">Work</a>
+      <a href="./index.html#expertise">Expertise</a>
+      <a href="./about.html">About</a>
+      <a href="./resume.html">Resume</a>
+    </div>
+    <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">Let's talk</a>
+    <button class="v2-hamburger" aria-label="Menu" onclick="this.closest('.v2-nav').classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="v2-cs-hero">
+  <div class="container">
+    <p class="v2-breadcrumb"><a href="./index.html#work">← All work</a> &nbsp;·&nbsp; Case 06 of 09 · POC</p>
+    <div class="v2-meta-chips">
+      <span>Enterprise Healthcare GRC SaaS</span><span>AI Compliance Tooling</span><span>Product Owner</span><span>2026 · 4-week POC</span>
+    </div>
+    <h1>Compliance officers shouldn't be <em>typing questions off a PDF</em>.</h1>
+    <p class="v2-cs-dek">
+      A $0, four-week proof of concept that reads federal healthcare regulations and drafts compliance question sets in minutes, built to prove the AI would actually work before asking anyone to fund it.
+    </p>
+  </div>
+</header>
+
+<section class="v2-impact">
+  <div class="container">
+    <div class="v2-impact-grid" style="grid-template-columns:repeat(4,1fr);">
+      <div><div class="num">~2 min</div><div class="lbl">To generate 252 questions<br />vs. days, manually</div></div>
+      <div><div class="num">98<em>%</em></div><div class="lbl">Passed validation<br />guardrails (demo run)</div></div>
+      <div><div class="num">70–80<em>%</em></div><div class="lbl">Projected editorial time cut<br />(target, not yet measured)</div></div>
+      <div><div class="num"><em>$</em>0</div><div class="lbl">Infra spend<br />local POC, solo build</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">01</span>The problem</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">Two people, hand-authoring every question and every field.</h2>
+        <p>The compliance question-set product sells curated checklists that let a hospital self-assess against federal healthcare regulations. A two-person editorial team reads 30–40 page regulatory documents line by line, drafts a question for every requirement, and hand-populates 14 metadata fields per question: category, citation, risk score, entity type, and more. A single document takes days. Every existing question set then needs quarterly re-review against the current regulation, with no diff tool, so re-checking means re-reading the whole thing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">02</span>Discovery</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">The manual step wasn't dumb. It just quietly expired.</h2>
+        <p>Mapping the workflow surfaced a clean split: the mechanical majority of the work (extraction, formatting, first-pass classification) is automatable. The expert minority, final judgment on correctness and risk, is not, and shouldn't be. Five-whys on "why is this still manual in 2026?" landed on the real root cause: a workflow assumption, <em>humans must transcribe this</em>, that was true for years and stopped being true once vision-capable LLMs got good enough to read dense regulatory prose. Nobody had re-checked the assumption.</p>
+        <div class="v2-pullquote">"A compliance tool that fabricates a citation once is dead. The design has to make that structurally impossible, not just unlikely."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">03</span>Approach</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">AI drafts. A human approves. Nothing ships unreviewed.</h2>
+        <p>Two pipelines: one reads a regulatory document and drafts a full question set matching the editorial team's exact template; the other snapshots a regulatory source, diffs it against the last version, and classifies what actually changed. Both are strictly advisory: the model never auto-publishes, and if it can't ground a citation in the source text, it flags <strong>[VERIFY]</strong> instead of guessing.</p>
+        <div class="v2-callout">
+          <strong>The scoping call:</strong> built it as a zero-budget, local proof of concept first, with no cloud spend and no infrastructure ask, specifically to prove AI output quality before pitching the larger investment. A POC's job is to de-risk the bet, not impress a demo audience.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">04</span>Outcome</div>
+      <div>
+        <h2 class="v2-cs-h">A real demo run, honestly labeled.</h2>
+        <div class="v2-diff">
+          <div class="v2-diff-row minus"><span class="sign">−</span><span>232 questions, multiple days</span><span class="tag">manual (baseline)</span></div>
+          <div class="v2-diff-row plus"><span class="sign">+</span><span>252 questions, ~2 minutes</span><span class="tag">AI draft (demo run)</span></div>
+          <div style="height:16px;"></div>
+          <div class="v2-diff-row minus"><span class="sign">−</span><span>No change-alerting at all</span><span class="tag">before</span></div>
+          <div class="v2-diff-row plus"><span class="sign">+</span><span>98% of drafts passed guardrails</span><span class="tag">demo run, unvalidated by editors</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">05</span>My role</div>
+      <div>
+        <h2 class="v2-cs-h">What I owned, solo.</h2>
+        <div class="v2-role-list">
+          <div class="v2-role-item"><div class="k">Discovery</div><div>Process-mapped the manual workflow with the editorial team; built the automation map that separated mechanical from expert work.</div></div>
+          <div class="v2-role-item"><div class="k">Product framing</div><div>Positioned the tool as an accelerator, not a replacement, the decision that made it adoptable in a trust-sensitive domain.</div></div>
+          <div class="v2-role-item"><div class="k">Prompt &amp; guardrail design</div><div>Wrote the extraction prompt, the citation-grounding rules, and the validation checks that flag rather than fabricate.</div></div>
+          <div class="v2-role-item"><div class="k">Full build</div><div>Ingestion, both AI pipelines, a small web UI, all in a four-week, zero-budget window.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section" style="border-bottom:none;">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">06</span>Lessons</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">Framing is the product, not a feature of it.</h2>
+        <p><strong>Assist vs. replace is the real product decision.</strong> In a trust-sensitive domain, that framing choice matters more than any single feature. It's the difference between a tool a compliance team adopts and one they fear.</p>
+        <p><strong>A cheap POC is how you earn the expensive conversation.</strong> Proving AI quality at zero infrastructure cost is what unlocks the budget conversation for the real build, not the other way around.</p>
+        <p><strong>Never let the model choose between citing and fabricating.</strong> Give it a third option, flag for review, and the failure mode becomes "too cautious," never "confidently wrong."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-next">
+  <div class="container">
+    <div class="v2-next-row">
+      <a href="./case-regulatory-intelligence.html" class="big">Next case · Regulatory Intelligence Agent Pipeline <span>→</span></a>
+      <a href="./index.html#work" style="font-size:13.5px;color:var(--gray);">← All work</a>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cta">
+  <div class="container">
+    <h2>Let's build what <em>actually ships</em>.</h2>
+    <p>Actively interviewing for PM roles at product-first companies: B2B SaaS, AI-native, healthcare, GRC.</p>
+    <div class="row">
+      <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">krishnashemanth@gmail.com</a>
+      <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="v2-footer">
+  <div class="container">
+    <div class="v2-footer-grid">
+      <div>
+        <a href="./index.html" class="v2-brand" style="margin-bottom:18px;display:inline-flex;">KrishnaS Hemanth<span class="dot">.</span></a>
+        <p class="blurb">Product Manager building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p>
+      </div>
+      <div>
+        <h4>Work</h4>
+        <ul>
+          <li><a href="./case-quote-automation.html">AI Quote Automation</a></li>
+          <li><a href="./index.html#work">All case studies</a></li>
+          <li><a href="./about.html#principles">Principles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:krishnashemanth@gmail.com">Email</a></li>
+          <li><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="v2-footer-bottom">
+      <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+(function(){
+  var EMAIL = 'krishnashemanth@gmail.com';
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.setAttribute('title', 'Copy email ID');
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var restore = a.innerHTML;
+      function done(){ a.innerHTML = 'Email copied ✓'; setTimeout(function(){ a.innerHTML = restore; }, 1500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(EMAIL).then(done, function(){ window.location.href = 'mailto:' + EMAIL; });
+      } else { window.location.href = 'mailto:' + EMAIL; }
+    });
+  });
+})();
+</script>
+<script data-goatcounter="https://krishnas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

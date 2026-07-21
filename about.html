@@ -3,147 +3,281 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About | KrishnaS Hemanth</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
+<title>About &amp; Principles | KrishnaS Hemanth</title>
+<meta name="description" content="Product Manager, 4 years in regulated AI-native B2B SaaS. Experience, capabilities, and the three principles I won't compromise on." />
 <link rel="icon" type="image/png" href="./assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://krishnashemanth.github.io/about.html">
+<meta property="og:title" content="About &amp; Principles | KrishnaS Hemanth">
+<meta property="og:description" content="Product Manager, 4 years in regulated AI-native B2B SaaS. Experience, capabilities, and the three principles I won't compromise on.">
+<meta property="og:image" content="https://krishnashemanth.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About &amp; Principles | KrishnaS Hemanth">
+<meta name="twitter:description" content="Product Manager, 4 years in regulated AI-native B2B SaaS. Experience, capabilities, and the three principles I won't compromise on.">
+<meta name="twitter:image" content="https://krishnashemanth.github.io/assets/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./nav-scroll.js"></script>
 </head>
 <body>
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="./index.html" class="nav-brand"><img src="./assets/Logo.png" alt="KrishnaS Hemanth" class="nav-logo"><small>PM · AI · Regulated SaaS</small></a>
-    <div class="nav-links">
-      <a href="./index.html">Work</a>
-      <a href="./manifesto.html">Principles</a>
+
+<nav class="v2-nav">
+  <div class="v2-nav-inner">
+    <a href="./index.html" class="v2-brand">KrishnaS Hemanth<span class="dot">.</span> <small>PM · AI · Regulated SaaS</small></a>
+    <div class="v2-links">
+      <a href="./index.html#work">Work</a>
+      <a href="./index.html#expertise">Expertise</a>
       <a href="./about.html" class="active">About</a>
       <a href="./resume.html">Resume</a>
     </div>
-    <a href="mailto:krishnashemanth@gmail.com" class="nav-cta"><span class="dot"></span> Get in touch</a>
+    <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">Let's talk</a>
+    <button class="v2-hamburger" aria-label="Menu" onclick="this.closest('.v2-nav').classList.toggle('nav-open')"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<main>
-  <header class="page-header">
-    <div class="container-narrow">
-      <p class="eyebrow">About</p>
-      <h1 class="h-display" style="margin-top:16px;">A short <em>honest</em> bio.</h1>
-      <p class="lede" style="margin-top:24px;">Four years in regulated B2B SaaS. Based in Bangalore, open to relocate to Hyderabad or work remote.</p>
-    </div>
-  </header>
 
-  <section class="section">
-    <div class="container-narrow">
-      <div class="prose">
+<!-- HERO -->
+<header class="v2-cs-hero">
+  <div class="container">
+    <p class="v2-breadcrumb"><a href="./index.html">← Home</a> &nbsp;·&nbsp; About &amp; Principles</p>
+    <h1>A short, <em>honest</em> bio.</h1>
+    <p class="v2-cs-dek">
+      Four years shipping AI-native B2B SaaS in regulated domains. Based in Bangalore, open to relocate to Hyderabad or work remote.
+    </p>
+  </div>
+</header>
+
+<!-- BIO -->
+<section class="v2-section" style="padding-bottom:48px;">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">01</span>Who I am</div>
+      <div class="v2-prose" style="max-width:720px;">
         <p>I've spent four years shipping AI-native B2B SaaS across healthcare GRC, clinical workflows, and enterprise retail. My background is in applied product thinking, the unglamorous parts: discovery, prioritization, regulatory sign-off, and killing the things that shouldn't ship.</p>
         <p>I've spent most of my career in domains where compliance is existential and the metrics have to be defended, not invented. That's shaped how I work. I prefer controlled automation over autonomous agents, behavior over opinion, and a written kill memo over a polite silence.</p>
-        <p>Outside of work I read too much philosophy of science, cook irregularly, and keep a small notebook of product failures — mine and other people's — as a running reminder that shipping is the easy part.</p>
-      </div>
-
-      <h2 class="h2" style="margin-top:72px; margin-bottom:8px;">Experience</h2>
-      <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-date">Aug 2025 — Present</div>
-          <div>
-            <div class="tl-role">Product Owner</div>
-            <div class="tl-company">Symplr · Enterprise GRC SaaS · Bangalore</div>
-            <ul class="tl-highlights">
-              <li><strong>LLM + RAG quote automation.</strong> 88% less data entry, 38% faster turnaround, 1.65× analyst throughput.</li>
-              <li><strong>$5–7M savings identified</strong> for enterprise hospital client through clinical AI POC.</li>
-              <li><strong>67 NPS</strong> on the spend management product; built weekly SLA triage across QA, Engineering, and CS.</li>
-              <li><strong>Pendo + WSJF</strong> prioritization driving multi-product platform consolidation.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-date">Feb 2022 — Aug 2025</div>
-          <div>
-            <div class="tl-role">Senior Business Analyst</div>
-            <div class="tl-company">Quantiphi · AI-first digital engineering</div>
-            <ul class="tl-highlights">
-              <li><strong>0→1 clinical AI platform.</strong> FDA SaMD, multi-tenant. NLP 68→88%, $500K+ ARR in 6 months.</li>
-              <li><strong>4,000+ manual hours/year eliminated</strong> via clinical workflow automation.</li>
-              <li><strong>$1M engineering spend avoided</strong> — recommended termination of a non-viable AI initiative in discovery.</li>
-              <li><strong>42% cart abandonment reduction</strong> on enterprise retail platform via UX research + A/B testing.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <h2 class="h2" style="margin-top:72px; margin-bottom:24px;">Capabilities</h2>
-      <div>
-        <div class="skill-group">
-          <div class="skill-label">Product strategy</div>
-          <div class="skill-tags">
-            <span class="skill-tag strong">0→1 discovery</span>
-            <span class="skill-tag">Roadmap definition</span>
-            <span class="skill-tag">WSJF / RICE</span>
-            <span class="skill-tag">GTM sequencing</span>
-            <span class="skill-tag">Kill-memo artifacts</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <div class="skill-label">AI &amp; regulated SaaS</div>
-          <div class="skill-tags">
-            <span class="skill-tag strong">LLM + RAG</span>
-            <span class="skill-tag strong">HITL architectures</span>
-            <span class="skill-tag">Gemini</span>
-            <span class="skill-tag">GPT</span>
-            <span class="skill-tag">Claude</span>
-            <span class="skill-tag">FDA SaMD</span>
-            <span class="skill-tag">HIPAA</span>
-            <span class="skill-tag">GDPR</span>
-            <span class="skill-tag">Prompt tuning</span>
-            <span class="skill-tag">Eval loops</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <div class="skill-label">Execution &amp; tools</div>
-          <div class="skill-tags">
-            <span class="skill-tag">SAFe</span>
-            <span class="skill-tag">Agile</span>
-            <span class="skill-tag">Pendo</span>
-            <span class="skill-tag">Analytics</span>
-            <span class="skill-tag">JIRA</span>
-            <span class="skill-tag">Azure DevOps</span>
-            <span class="skill-tag">Figma</span>
-            <span class="skill-tag">Miro</span>
-            <span class="skill-tag">Postman</span>
-            <span class="skill-tag">API validation</span>
-          </div>
-        </div>
-      </div>
-
-      <h2 class="h2" style="margin-top:72px; margin-bottom:24px;">Recognition</h2>
-      <div class="prose">
-        <p><strong>Symplr.</strong> <em>Dream Team</em> (cross-functional collaboration), <em>You Make a Difference</em> (AI POC delivery).</p>
-        <p><strong>Quantiphi.</strong> <em>Kaizen</em> (process improvement and operational excellence), <em>SPOT</em> (exceptional delivery).</p>
-        <p><strong>Certifications.</strong> SAFe 5.0 Product Owner / Product Manager · Product Management Certificate, Product School · Google Associate Cloud Engineer.</p>
+        <p>Outside of work I read too much philosophy of science, cook irregularly, and keep a small notebook of product failures, mine and other people's, as a running reminder that shipping is the easy part.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="site-footer">
-    <div class="footer-inner container">
-      <div class="footer-grid">
+<!-- EXPERIENCE -->
+<section class="v2-section alt" style="padding:72px 0;">
+  <div class="container">
+    <p class="v2-sec-kicker">Experience</p>
+    <h2 class="v2-sec-title">Two companies. One thread: <em>AI under constraints</em>.</h2>
+    <div class="v2-timeline">
+      <div class="v2-tl-item">
+        <div class="v2-tl-date">Aug 2025 – Present</div>
         <div>
-          <img src="./assets/Logo_transparent.png" alt="KrishnaS Hemanth" class="footer-logo">
-          <p class="kicker" style="color:var(--ink-4); margin-bottom:20px;">Let's talk</p>
-          <h2 class="footer-h">Looking for a PM who ships AI<br/>that <em>actually works?</em></h2>
-          <a href="mailto:krishnashemanth@gmail.com" class="btn btn-primary" style="background:var(--accent); color:var(--paper); margin-top:24px;">krishnashemanth@gmail.com <span class="arrow">→</span></a>
-        </div>
-        <div>
-          <p class="kicker" style="color:var(--ink-4); margin-bottom:20px;">Channels</p>
-          <ul class="footer-contact-list">
-            <li><span class="k">Email</span><a href="mailto:krishnashemanth@gmail.com">krishnashemanth@gmail.com</a></li>
-            <li><span class="k">LinkedIn</span><a href="https://linkedin.com/in/krishnashemanth" target="_blank">linkedin.com/in/krishnashemanth</a></li>
+          <div class="v2-tl-role">Product Owner</div>
+          <div class="v2-tl-company">Symplr · Enterprise Healthcare GRC SaaS · Bangalore</div>
+          <ul>
+            <li><strong>LLM + RAG quote automation.</strong> 97% faster extraction per quote (30–40 min → &lt;1 min), 38% faster turnaround, ~99.9% accuracy in production.</li>
+            <li><strong>$5–7M savings identified</strong> for enterprise hospital client through clinical AI POC.</li>
+            <li><strong>67 NPS</strong> on the spend management product; built weekly SLA triage across QA, Engineering, and CS.</li>
+            <li><strong>Phoenix legacy rebuild:</strong> rebuilt 60–70% of a 20-year-old, 366-screen platform as a modern AI-first web application; its extraction engine shipped to production as the quote automation tool.</li>
+            <li><strong>AI POC portfolio:</strong> compliance content AI (252 questions drafted in ~2 min) and a five-agent regulatory intelligence pipeline with grounded-or-silent citations.</li>
+            <li><strong>Pendo + WSJF</strong> prioritization driving multi-product platform consolidation.</li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+      <div class="v2-tl-item" style="border-bottom:none;">
+        <div class="v2-tl-date">Feb 2022 – Aug 2025</div>
+        <div>
+          <div class="v2-tl-role">Senior Business Analyst</div>
+          <div class="v2-tl-company">Quantiphi · AI-first digital engineering</div>
+          <ul>
+            <li><strong>0→1 clinical AI platform.</strong> FDA SaMD, multi-tenant. NLP 68→88%, $500K+ ARR in 6 months.</li>
+            <li><strong>4,000+ manual hours/year eliminated</strong> via clinical workflow automation.</li>
+            <li><strong>$1M engineering spend avoided</strong> by recommending termination of a non-viable AI initiative in discovery.</li>
+            <li><strong>42% cart abandonment reduction</strong> on enterprise retail platform via UX research + A/B testing.</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </footer>
-</main>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  </div>
+</section>
+
+<!-- PRINCIPLES (merged from v1 manifesto) -->
+<section class="v2-section" id="principles">
+  <div class="container">
+    <p class="v2-sec-kicker">How I work</p>
+    <h2 class="v2-sec-title">Three things I <em>won't</em> compromise on.</h2>
+    <p class="v2-sec-sub">I've had the luxury of shipping in domains where the wrong call doesn't just cost money, it costs trust. These are the rules that kept me honest.</p>
+
+    <div class="v2-principles">
+      <div class="v2-principle reveal">
+        <div class="num">01</div>
+        <div>
+          <h3>ROI outweighs novelty.</h3>
+          <p>Technical excitement is cheap. Sustainable economics are rare. I've killed a $1M AI initiative during discovery when PHI/PII compliance blockers turned the ROI negative; I'd do it again. The hardest deliverable a PM produces is a well-argued recommendation against shipping. <strong>Build what can scale safely, not what demos well.</strong></p>
+        </div>
+      </div>
+      <div class="v2-principle reveal">
+        <div class="num">02</div>
+        <div>
+          <h3>Behavior is signal. Opinions are noise.</h3>
+          <p>Users tell you the checkout is "fine." The funnel tells you they abandon at step three. I trust instrumentation, Pendo telemetry and controlled experiments, over stated preference. That's how we cut enterprise cart abandonment 42%, and how I sequence roadmaps now.</p>
+        </div>
+      </div>
+      <div class="v2-principle reveal">
+        <div class="num">03</div>
+        <div>
+          <h3>In regulated domains, trust compounds.</h3>
+          <p>In healthcare and GRC, adoption isn't a function of speed or feature count, it's a function of defensibility. The clinical MVP pivoted from speed-first to interpretability-first after clinician interviews told us they wouldn't sign what they couldn't defend. Controlled automation beat full autonomy; trust beat velocity. <strong>$500K+ ARR in six months followed.</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:64px;">
+      <p class="v2-sec-kicker">Operating system</p>
+      <h2 class="v2-sec-title" style="font-size:clamp(24px,2.8vw,32px);">Regardless of the domain, the loop is the same.</h2>
+      <div class="v2-loop">
+        <div class="v2-loop-step"><div class="n">01</div><div class="t">Break down ambiguity.</div></div>
+        <div class="v2-loop-step"><div class="n">02</div><div class="t">Define success metrics.</div></div>
+        <div class="v2-loop-step"><div class="n">03</div><div class="t">Validate with data.</div></div>
+        <div class="v2-loop-step"><div class="n">04</div><div class="t">Balance value vs. risk.</div></div>
+        <div class="v2-loop-step"><div class="n">05</div><div class="t">Decide fast, measure always.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="v2-section alt" style="padding:72px 0;">
+  <div class="container">
+    <p class="v2-sec-kicker">Capabilities</p>
+    <h2 class="v2-sec-title" style="margin-bottom:36px;">The toolkit.</h2>
+    <div class="v2-tag-group">
+      <div class="v2-tag-label">Product strategy</div>
+      <div class="v2-tags">
+        <span class="v2-tag">0→1 discovery</span><span class="v2-tag">Roadmap definition</span><span class="v2-tag">WSJF / RICE</span><span class="v2-tag">GTM sequencing</span><span class="v2-tag">Kill-memo artifacts</span>
+      </div>
+    </div>
+    <div class="v2-tag-group">
+      <div class="v2-tag-label">AI &amp; regulated SaaS</div>
+      <div class="v2-tags">
+        <span class="v2-tag">LLM + RAG</span><span class="v2-tag">HITL architectures</span><span class="v2-tag">Gemini</span><span class="v2-tag">GPT</span><span class="v2-tag">Claude</span><span class="v2-tag">FDA SaMD</span><span class="v2-tag">HIPAA</span><span class="v2-tag">GDPR</span><span class="v2-tag">Prompt tuning</span><span class="v2-tag">Eval loops</span>
+      </div>
+    </div>
+    <div class="v2-tag-group" style="margin-bottom:0;">
+      <div class="v2-tag-label">Execution &amp; tools</div>
+      <div class="v2-tags">
+        <span class="v2-tag">SAFe</span><span class="v2-tag">Agile</span><span class="v2-tag">Pendo</span><span class="v2-tag">Analytics</span><span class="v2-tag">JIRA</span><span class="v2-tag">Azure DevOps</span><span class="v2-tag">Figma</span><span class="v2-tag">Miro</span><span class="v2-tag">Postman</span><span class="v2-tag">API validation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="v2-section alt" style="padding:72px 0; border-bottom:1px solid var(--light-gray);">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">✦</span>Colleagues say</div>
+      <div class="v2-prose" style="max-width:760px;">
+        <div class="v2-pullquote" style="margin-top:0; font-size:17.5px; line-height:1.6;">
+          <p>"I've worked with Hemanth for the past year, and I can say without hesitation that he is one of the most talented Product Owners I've had the pleasure of working with... Hemanth has complete command of his product space and is exceptionally well organized.</p>
+          <p>What sets him apart is his leadership. During a recent challenging quarter, he shields his team when things are hard and gives them the spotlight when things go well. That's empathy-driven leadership that few senior leaders ever develop, and he has it early in his career.</p>
+          <p>His technical and AI capabilities are equally impressive... He pairs that skill with strong requirements gathering, stakeholder management, and a genuine talent for solving hard problems calmly and methodically. Hemanth is going to be a senior executive leader someday soon. I'm certain of it."</p>
+        </div>
+        <p style="font-size:14.5px; margin-top:20px;"><strong>Alex Marciante</strong> · Senior Product Management Executive<br><span style="color:var(--gray);">Alex was senior to KrishnaS but didn't manage KrishnaS directly. (LinkedIn Recommendation, July 2026)</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECOGNITION -->
+<section class="v2-section" style="padding:72px 0;">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">✦</span>Recognition</div>
+      <div class="v2-prose" style="max-width:720px;">
+        <p><strong>Symplr.</strong> <em>Dream Team</em> (cross-functional collaboration), <em>You Make a Difference</em> (AI POC delivery).</p>
+        <p><strong>Quantiphi.</strong> <em>Kaizen</em> (process improvement and operational excellence), <em>SPOT</em> (exceptional delivery).</p>
+        <p><strong>Certifications.</strong> SAFe 5.0 Product Owner / Product Manager · Product Management Certificate, Product School · Google Associate Cloud Engineer.</p>
+        <p><strong>Education.</strong> M.Tech, Industrial Biotechnology, NIT Karnataka (Surathkal) · B.Tech, Biotechnology, NIT Andhra Pradesh.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="v2-marquee-band">
+  <div class="v2-marquee" id="marquee">
+    <span>Dream Team Award</span><span>You Make A Difference Award</span><span>Kaizen Award</span><span>SPOT Award</span><span>SAFe 5.0 POPM</span><span>Product School PM Certificate</span><span>Google Associate Cloud Engineer</span><span>NIT Karnataka · M.Tech</span><span>NIT Andhra Pradesh · B.Tech</span>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="v2-cta">
+  <div class="container">
+    <h2>Let's build what <em>actually ships</em>.</h2>
+    <p>Actively interviewing for PM roles at product-first companies: B2B SaaS, AI-native, healthcare, GRC.</p>
+    <div class="row">
+      <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">krishnashemanth@gmail.com</a>
+      <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="v2-footer">
+  <div class="container">
+    <div class="v2-footer-grid">
+      <div>
+        <a href="./index.html" class="v2-brand" style="margin-bottom:18px;display:inline-flex;">KrishnaS Hemanth<span class="dot">.</span></a>
+        <p class="blurb">Product Manager building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p>
+      </div>
+      <div>
+        <h4>Work</h4>
+        <ul>
+          <li><a href="./case-quote-automation.html">AI Quote Automation</a></li>
+          <li><a href="./index.html#work">All case studies</a></li>
+          <li><a href="./about.html#principles">Principles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:krishnashemanth@gmail.com">Email</a></li>
+          <li><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="v2-footer-bottom">
+      <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+      <span style="color:var(--gray);"><strong>Notice:</strong> 60 days (Available from <span id="available-from">TBD</span>)</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+var af = new Date(); af.setDate(af.getDate() + 60);
+var afEl = document.getElementById('available-from');
+if (afEl) afEl.textContent = af.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+const mq = document.getElementById('marquee'); mq.innerHTML += mq.innerHTML;
+const ro = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+</script>
+<script>
+(function(){
+  var EMAIL = 'krishnashemanth@gmail.com';
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.setAttribute('title', 'Copy email ID');
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var restore = a.innerHTML;
+      function done(){ a.innerHTML = 'Email copied ✓'; setTimeout(function(){ a.innerHTML = restore; }, 1500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(EMAIL).then(done, function(){ window.location.href = 'mailto:' + EMAIL; });
+      } else { window.location.href = 'mailto:' + EMAIL; }
+    });
+  });
+})();
+</script>
+<script data-goatcounter="https://krishnas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

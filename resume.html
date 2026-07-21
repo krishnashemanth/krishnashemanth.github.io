@@ -4,416 +4,249 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Resume | Krishnasai Hemanth Randhi</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
+<meta name="description" content="Resume · Product Manager, AI, regulated B2B SaaS. 4 years. $500K+ ARR shipped, $5–7M savings identified, one $1M project killed on purpose." />
 <link rel="icon" type="image/png" href="./assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://krishnashemanth.github.io/resume.html">
+<meta property="og:title" content="Resume | Krishnasai Hemanth Randhi">
+<meta property="og:description" content="Resume · Product Manager, AI, regulated B2B SaaS. 4 years. $500K+ ARR shipped, $5–7M savings identified, one $1M project killed on purpose.">
+<meta property="og:image" content="https://krishnashemanth.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Resume | Krishnasai Hemanth Randhi">
+<meta name="twitter:description" content="Resume · Product Manager, AI, regulated B2B SaaS. 4 years. $500K+ ARR shipped, $5–7M savings identified, one $1M project killed on purpose.">
+<meta name="twitter:image" content="https://krishnashemanth.github.io/assets/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./nav-scroll.js"></script>
 <style>
-  .resume-sheet {
-    max-width: 860px;
-    margin: 0 auto;
-    background: var(--paper);
-    padding: 8px 0 80px;
-  }
-  .resume-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--rule-strong);
-    margin-bottom: 32px;
-    flex-wrap: wrap;
-  }
-  .resume-head h1 {
-    font-family: var(--ff-display);
-    font-weight: 300;
-    font-variation-settings: "SOFT" 30, "opsz" 144;
-    font-size: clamp(40px, 5vw, 56px);
-    line-height: 1.08;
-    letter-spacing: -0.025em;
-    margin-bottom: 14px;
-  }
-  .resume-head h1 em { font-style: italic; font-weight: 400; color: var(--accent); }
-  .resume-head .sub {
-    font-family: var(--ff-mono);
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-3);
-  }
-  .resume-contact {
-    font-family: var(--ff-mono);
-    font-size: 12px;
-    line-height: 1.8;
-    text-align: right;
-    color: var(--ink-2);
-  }
-  .resume-contact a { border-bottom: 1px solid var(--rule); }
-  .resume-contact a:hover { color: var(--accent); border-color: var(--accent); }
-
-  .r-section { margin-bottom: 36px; }
-  .r-section-title {
-    font-family: var(--ff-mono);
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 16px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .r-lede {
-    font-family: var(--ff-italic);
-    font-style: italic;
-    font-size: 20px;
-    line-height: 1.45;
-    color: var(--ink-2);
-    max-width: 680px;
-  }
-
-  .r-job {
-    display: grid;
-    grid-template-columns: 160px 1fr;
-    gap: 28px;
-    padding: 18px 0;
-    border-bottom: 1px solid var(--rule);
-  }
-  .r-job:last-child { border-bottom: none; }
-  @media (max-width: 720px) { .r-job { grid-template-columns: 1fr; gap: 10px; } }
-  .r-job-date {
-    font-family: var(--ff-mono);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-3);
-    padding-top: 3px;
-  }
-  .r-job-role {
-    font-family: var(--ff-display);
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: -0.01em;
-    margin-bottom: 2px;
-  }
-  .r-job-company {
-    font-size: 14px;
-    color: var(--ink-3);
-    margin-bottom: 10px;
-  }
-  .r-job ul {
-    list-style: none;
-    padding: 0;
-    margin: 8px 0 0;
-    display: grid;
-    gap: 6px;
-  }
-  .r-job li {
-    font-size: 14.5px;
-    line-height: 1.55;
-    padding-left: 18px;
-    position: relative;
-    color: var(--ink-2);
-  }
-  .r-job li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 10px;
-    width: 8px;
-    height: 1px;
-    background: var(--accent);
-  }
-  .r-job li strong { color: var(--ink); font-weight: 600; }
-
-  .r-grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-  @media (max-width: 720px) { .r-grid-2 { grid-template-columns: 1fr; } }
-
-  .r-skill-block { margin-bottom: 18px; }
-  .r-skill-block .k {
-    font-family: var(--ff-mono);
-    font-size: 10.5px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-3);
-    margin-bottom: 6px;
-  }
-  .r-skill-block .v {
-    font-size: 14px;
-    line-height: 1.55;
-    color: var(--ink-2);
-  }
-
-  .r-toolbar {
-    position: sticky;
-    top: 68px;
-    z-index: 40;
-    background: var(--paper);
-    border-bottom: 1px solid var(--rule);
-    padding: 14px 0;
-    margin-bottom: 28px;
-  }
-  .r-toolbar-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .r-toolbar .hint {
-    font-family: var(--ff-mono);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-3);
-  }
-  .r-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 16px;
-    border-radius: 6px;
-    font-family: var(--ff-mono);
-    font-size: 12px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    background: var(--ink);
-    color: var(--paper);
-    border: none;
-    cursor: pointer;
-    transition: background 0.2s ease;
-  }
-  .r-btn:hover { background: var(--accent); }
-  .r-btn.ghost { background: transparent; color: var(--ink-2); border: 1px solid var(--rule-strong); }
-  .r-btn.ghost:hover { border-color: var(--accent); color: var(--accent); background: transparent; }
-
-  /* Print */
-  @media print {
-    .site-nav, .site-footer, .r-toolbar { display: none !important; }
-    body { background: #fff; color: #000; }
-    .resume-sheet { padding: 0; max-width: none; }
-    .r-section-title { color: #000; border-bottom: 1px solid #000; }
-    .r-job li::before { background: #000; }
-    .r-job { page-break-inside: avoid; border-bottom: 1px solid #ccc; }
-    .resume-head h1 em { color: #000; }
-    a { color: #000 !important; }
+  .r-sheet{max-width:880px;margin:0 auto;padding:0 0 72px;}
+  .r-toolbar{position:sticky;top:72px;z-index:40;background:#fff;border-bottom:1px solid var(--light-gray);padding:14px 0;margin-bottom:36px;}
+  .r-toolbar-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
+  .r-hint{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray);font-weight:500;}
+  .r-sec{margin-bottom:44px;}
+  .r-sec-title{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--light-gray);}
+  .r-lede{font-size:19px;font-weight:300;color:var(--ink-soft);max-width:700px;line-height:1.65;}
+  .r-lede strong{font-weight:600;color:var(--navy);}
+  .r-chip{display:inline-block;font-size:12.5px;font-weight:400;color:var(--ink-soft);background:var(--bg-light);border:1px solid var(--light-gray);border-radius:100px;padding:6px 14px;margin:0 6px 8px 0;}
+  .r-chip.strong{background:var(--green-soft);border-color:transparent;color:var(--green);font-weight:500;}
+  .r-cases{list-style:none;display:grid;gap:12px;}
+  .r-cases a{color:var(--navy);font-weight:500;border-bottom:1px solid var(--tint-blue);}
+  .r-cases a:hover{color:var(--green);border-color:var(--green);}
+  .r-cases span{color:var(--gray);font-weight:300;font-size:14px;}
+  @media print{
+    .v2-nav,.v2-footer,.v2-cta,.r-toolbar{display:none !important;}
+    body{background:#fff;}
+    .r-sec-title{color:#000;border-color:#000;}
   }
 </style>
 </head>
 <body>
 
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="./index.html" class="nav-brand"><img src="./assets/Logo.png" alt="KrishnaS Hemanth" class="nav-logo"><small>PM · AI · Regulated SaaS</small></a>
-    <div class="nav-links">
-      <a href="./index.html">Work</a>
-      <a href="./manifesto.html">Principles</a>
+<nav class="v2-nav">
+  <div class="v2-nav-inner">
+    <a href="./index.html" class="v2-brand">KrishnaS Hemanth<span class="dot">.</span> <small>PM · AI · Regulated SaaS</small></a>
+    <div class="v2-links">
+      <a href="./index.html#work">Work</a>
+      <a href="./index.html#expertise">Expertise</a>
       <a href="./about.html">About</a>
       <a href="./resume.html" class="active">Resume</a>
     </div>
-    <a href="mailto:krishnashemanth@gmail.com" class="nav-cta"><span class="dot"></span> Get in touch</a>
+    <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">Let's talk</a>
+    <button class="v2-hamburger" aria-label="Menu" onclick="this.closest('.v2-nav').classList.toggle('nav-open')"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<main>
+<!-- HERO -->
+<header class="v2-cs-hero" style="padding-bottom:56px;">
+  <div class="container">
+    <p class="v2-breadcrumb"><a href="./index.html">← Home</a> &nbsp;·&nbsp; Resume</p>
+    <h1>Krishnasai Hemanth <em>Randhi</em></h1>
+    <p class="v2-cs-dek">Product Manager · AI · Regulated B2B SaaS · 4 yrs<br />Bangalore, IN · Open to Hyderabad / Remote</p>
+  </div>
+</header>
 
-  <div class="r-toolbar">
-    <div class="container">
-      <div class="r-toolbar-inner">
-        <span class="hint">Resume · Jul 2026 · 1 page</span>
-        <div style="display:flex; gap:10px;">
-          <button class="r-btn ghost" onclick="window.print()">Print → PDF</button>
-          <a class="r-btn" href="mailto:krishnashemanth@gmail.com?subject=Role%20for%20KrishnaS%20Hemanth">Get in touch →</a>
-        </div>
+<div class="r-toolbar">
+  <div class="container">
+    <div class="r-toolbar-inner">
+      <span class="r-hint">Resume · <span id="resume-date">Jul 2026</span> · 1 page</span>
+      <div style="display:flex;gap:10px;">
+        <button class="btn btn-outline" style="padding:9px 20px;font-size:13px;" onclick="window.print()">Print → PDF</button>
+        <a class="btn btn-green" style="padding:9px 20px;font-size:13px;" href="mailto:krishnashemanth@gmail.com?subject=Role%20for%20KrishnaS%20Hemanth">Get in touch →</a>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="container">
-    <div class="resume-sheet">
+<div class="container">
+  <div class="r-sheet">
 
-      <header class="resume-head">
-        <div>
-          <h1>Krishnasai Hemanth <em>Randhi</em></h1>
-          <div class="sub">Product Manager · AI · Regulated B2B SaaS · 4 yrs</div>
-        </div>
-        <div class="resume-contact">
-          <div><a href="mailto:krishnashemanth@gmail.com">krishnashemanth@gmail.com</a></div>
-          <div><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">linkedin.com/in/krishnashemanth</a></div>
-          <div>Bangalore, IN &middot; Open to Hyderabad / Remote</div>
-        </div>
-      </header>
+    <section class="r-sec">
+      <div class="r-sec-title">Profile</div>
+      <p class="r-lede">
+        Four years shipping AI-native B2B SaaS in regulated domains: healthcare GRC, clinical workflows, and enterprise retail. <strong>$500K+ ARR shipped, $5–7M in client savings identified,</strong> and one $1M project killed on purpose.
+      </p>
+      <div style="margin-top:14px;font-size:14px;color:var(--gray);">
+        <a href="mailto:krishnashemanth@gmail.com" style="color:var(--navy);font-weight:500;">krishnashemanth@gmail.com</a> &nbsp;·&nbsp;
+        <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" style="color:var(--navy);font-weight:500;">linkedin.com/in/krishnashemanth</a> &nbsp;·&nbsp;
+        <a href="https://krishnashemanth.github.io" style="color:var(--navy);font-weight:500;">krishnashemanth.github.io</a>
+        <br><span style="display:inline-block;margin-top:8px;"><strong>Notice:</strong> 60 days (Available from <span id="available-from">TBD</span>)</span>
+      </div>
+    </section>
 
-      <section class="r-section">
-        <div class="r-section-title">Profile</div>
-        <p class="r-lede">
-          Four years shipping AI-native B2B SaaS in regulated domains: healthcare GRC, clinical workflows, and enterprise retail. <span style="color:var(--ink); font-style:normal; font-weight:500;">$500K+ ARR shipped, $5-7M in client savings identified,</span> and one $1M project killed on purpose.
-        </p>
-      </section>
-
-      <section class="r-section">
-        <div class="r-section-title">Experience</div>
-
-        <div class="r-job">
-          <div class="r-job-date">Aug 2025 - Present</div>
+    <section class="r-sec">
+      <div class="r-sec-title">Experience</div>
+      <div class="v2-timeline">
+        <div class="v2-tl-item">
+          <div class="v2-tl-date">Aug 2025 – Present</div>
           <div>
-            <div class="r-job-role">Product Owner</div>
-            <div class="r-job-company">Symplr · Healthcare GRC SaaS · Bangalore, IN</div>
+            <div class="v2-tl-role">Product Owner</div>
+            <div class="v2-tl-company">Symplr · Enterprise Healthcare GRC SaaS · Bangalore, IN</div>
             <ul>
-              <li>Shipped <strong>LLM + RAG quote automation</strong> - cut data entry 88% (8 to 1 min/quote), turnaround 38% (3.2 to 1.5-2 days), scaled analyst throughput 1.65x without added headcount.</li>
-              <li>Identified <strong>$5-7M savings</strong> for enterprise hospital client through a clinical AI POC validated against live contract data; adopted into the core sales narrative within 90 days.</li>
+              <li>Shipped <strong>LLM + RAG quote automation</strong>: cut extraction time 97% (30–40 to under 1 min/quote) at ~99.9% accuracy, turnaround 38% (3.2 to 1.5–2 days), without added headcount.</li>
+              <li>Identified <strong>$5–7M savings</strong> for enterprise hospital client through a clinical AI POC validated against live contract data; adopted into the core sales narrative within 90 days.</li>
               <li>Authored PRDs and WSJF-prioritized multi-product roadmap across four squads; owned Pendo telemetry and weekly review cadence with eng, QA, CS, compliance.</li>
               <li><strong>Stakeholder management:</strong> aligned cross-functional teams (eng, QA, CS, legal) on competing priorities; presented roadmap trade-offs directly to senior leadership.</li>
               <li>Recognized: Dream Team (cross-functional collaboration), You Make a Difference (AI POC delivery).</li>
             </ul>
           </div>
         </div>
-
-        <div class="r-job">
-          <div class="r-job-date">Feb 2022 - Aug 2025</div>
+        <div class="v2-tl-item" style="border-bottom:none;">
+          <div class="v2-tl-date">Feb 2022 – Aug 2025</div>
           <div>
-            <div class="r-job-role">Senior Business Analyst · Product</div>
-            <div class="r-job-company">Quantiphi · AI-first digital engineering · Bangalore, IN</div>
+            <div class="v2-tl-role">Senior Business Analyst · Product</div>
+            <div class="v2-tl-company">Quantiphi · AI-first digital engineering · Bangalore, IN</div>
             <ul>
-              <li>Led <strong>0→1 clinical AI platform</strong> (FDA SaMD, multi-tenant) for an enterprise pharma client - pivoted MVP from speed-first to interpretability-first after 20+ clinician interviews; NLP 68 to 88%, <strong>$500K+ ARR</strong> in 6 months.</li>
+              <li>Led <strong>0→1 clinical AI platform</strong> (FDA SaMD, multi-tenant) for an enterprise pharma client; pivoted MVP from speed-first to interpretability-first after 20+ clinician interviews; NLP 68 to 88%, <strong>$500K+ ARR</strong> in 6 months.</li>
               <li>Eliminated <strong>4,000+ manual hours/yr</strong> via clinical workflow automation; RAG + HITL architectures on Gemini foundation model.</li>
-              <li>Recommended termination of a <strong>$1M AI initiative</strong> in discovery after surfacing PHI/PII compliance blockers and negative ROI - engineering spend avoided, team rotated to shipping work.</li>
+              <li>Recommended termination of a <strong>$1M AI initiative</strong> in discovery after surfacing PHI/PII compliance blockers and negative ROI; engineering spend avoided, team rotated to shipping work.</li>
               <li>Cut enterprise retail cart abandonment <strong>42%</strong> via Pendo funnel instrumentation and controlled A/B testing.</li>
               <li><strong>AI model evaluation:</strong> ran structured red-teaming, confidence-threshold calibration, and edge-case taxonomy to improve model reliability and compliance defensibility.</li>
               <li>Recognized: Kaizen (process improvement), SPOT (exceptional delivery).</li>
             </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="r-section">
-        <div class="r-section-title">Capabilities</div>
-        <div class="r-grid-2">
-          <div>
-            <div class="r-skill-block">
-              <div class="k">Product strategy</div>
-              <div class="r-skill-tags">
-                <span class="r-skill-chip strong">0→1 discovery</span>
-                <span class="r-skill-chip">Roadmap definition</span>
-                <span class="r-skill-chip">WSJF / RICE</span>
-                <span class="r-skill-chip">Kill-memo artifacts</span>
-                <span class="r-skill-chip">GTM sequencing</span>
-                <span class="r-skill-chip">Stakeholder management</span>
-                <span class="r-skill-chip">Executive communication</span>
-              </div>
-            </div>
-            <div class="r-skill-block">
-              <div class="k">AI &amp; regulated SaaS</div>
-              <div class="r-skill-tags">
-                <span class="r-skill-chip strong">LLM + RAG</span>
-                <span class="r-skill-chip strong">HITL architectures</span>
-                <span class="r-skill-chip">Gemini</span>
-                <span class="r-skill-chip">GPT</span>
-                <span class="r-skill-chip">Claude</span>
-                <span class="r-skill-chip">FDA SaMD</span>
-                <span class="r-skill-chip">HIPAA</span>
-                <span class="r-skill-chip">GDPR</span>
-                <span class="r-skill-chip">Prompt tuning</span>
-                <span class="r-skill-chip">Eval loops</span>
-                <span class="r-skill-chip">AI red-teaming</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="r-skill-block">
-              <div class="k">Execution</div>
-              <div class="r-skill-tags">
-                <span class="r-skill-chip">SAFe</span>
-                <span class="r-skill-chip">Agile</span>
-                <span class="r-skill-chip">JIRA</span>
-                <span class="r-skill-chip">Azure DevOps</span>
-                <span class="r-skill-chip">Confluence</span>
-                <span class="r-skill-chip">Sprint ceremonies</span>
-                <span class="r-skill-chip">Cross-functional delivery</span>
-              </div>
-            </div>
-            <div class="r-skill-block">
-              <div class="k">Research &amp; tools</div>
-              <div class="r-skill-tags">
-                <span class="r-skill-chip">Pendo</span>
-                <span class="r-skill-chip">Controlled A/B testing</span>
-                <span class="r-skill-chip">User interviews</span>
-                <span class="r-skill-chip">Figma</span>
-                <span class="r-skill-chip">Miro</span>
-                <span class="r-skill-chip">Postman</span>
-                <span class="r-skill-chip">SQL basics</span>
-              </div>
-            </div>
-          </div>
+    <section class="r-sec">
+      <div class="r-sec-title">Capabilities</div>
+      <div class="v2-tag-group">
+        <div class="v2-tag-label">Product strategy</div>
+        <div>
+          <span class="r-chip">0→1 discovery</span><span class="r-chip">Roadmap definition</span><span class="r-chip">WSJF / RICE</span><span class="r-chip">Kill-memo artifacts</span><span class="r-chip">GTM sequencing</span><span class="r-chip">Stakeholder management</span><span class="r-chip">Executive communication</span>
         </div>
-      </section>
-
-      <section class="r-section">
-        <div class="r-section-title">Education &amp; Certifications</div>
-        <div class="r-grid-2">
-          <div>
-            <div class="r-skill-block">
-              <div class="k">Education</div>
-              <div class="v">M.Tech, Industrial Biotechnology · NIT Karnataka (NITK Surathkal) · CGPA 8.2<br/>B.Tech, Biotechnology · NIT Andhra Pradesh (NITAP) · CGPA 7.3</div>
-            </div>
-          </div>
-          <div>
-            <div class="r-skill-block">
-              <div class="k">Certifications</div>
-              <div class="v">SAFe 5.0 POPM · Product Management Certificate, Product School · Google Associate Cloud Engineer</div>
-            </div>
-          </div>
+      </div>
+      <div class="v2-tag-group">
+        <div class="v2-tag-label">AI &amp; regulated SaaS</div>
+        <div>
+          <span class="r-chip">LLM + RAG</span><span class="r-chip">HITL architectures</span><span class="r-chip">Gemini</span><span class="r-chip">GPT</span><span class="r-chip">Claude</span><span class="r-chip">FDA SaMD</span><span class="r-chip">HIPAA</span><span class="r-chip">GDPR</span><span class="r-chip">Prompt tuning</span><span class="r-chip">Eval loops</span><span class="r-chip">AI red-teaming</span>
         </div>
-      </section>
+      </div>
+      <div class="v2-tag-group">
+        <div class="v2-tag-label">Execution</div>
+        <div>
+          <span class="r-chip">SAFe</span><span class="r-chip">Agile</span><span class="r-chip">JIRA</span><span class="r-chip">Azure DevOps</span><span class="r-chip">Confluence</span><span class="r-chip">Sprint ceremonies</span><span class="r-chip">Cross-functional delivery</span>
+        </div>
+      </div>
+      <div class="v2-tag-group" style="margin-bottom:0;">
+        <div class="v2-tag-label">Research &amp; tools</div>
+        <div>
+          <span class="r-chip">Pendo</span><span class="r-chip">Controlled A/B testing</span><span class="r-chip">User interviews</span><span class="r-chip">Figma</span><span class="r-chip">Miro</span><span class="r-chip">Postman</span><span class="r-chip">SQL basics</span>
+        </div>
+      </div>
+    </section>
 
-      <section class="r-section">
-        <div class="r-section-title">Selected case studies</div>
-        <ul style="list-style:none; padding:0; display:grid; gap:10px;">
-          <li style="font-size:14.5px;">
-            <a href="./case-quote-automation.html" style="color:var(--ink); border-bottom:1px solid var(--rule-strong);">AI Quote Automation · Symplr</a>
-            <span style="color:var(--ink-3);">88% less data entry, 1.65x throughput.</span>
-          </li>
-          <li style="font-size:14.5px;">
-            <a href="./case-radiology-ai.html" style="color:var(--ink); border-bottom:1px solid var(--rule-strong);">Clinical Radiology AI · 0→1</a>
-            <span style="color:var(--ink-3);">NLP 68 to 88%, $500K+ ARR in 6 months.</span>
-          </li>
-          <li style="font-size:14.5px;">
-            <a href="./case-killed-project.html" style="color:var(--ink); border-bottom:1px solid var(--rule-strong);">The $1M project I killed on purpose</a>
-            <span style="color:var(--ink-3);">Compliance-driven discovery kill memo.</span>
-          </li>
-        </ul>
-      </section>
+    <section class="r-sec">
+      <div class="r-sec-title">Education &amp; Certifications</div>
+      <div class="v2-prose">
+        <p><strong>Education.</strong> M.Tech, Industrial Biotechnology · NIT Karnataka (NITK Surathkal) · CGPA 8.2<br />B.Tech, Biotechnology · NIT Andhra Pradesh (NITAP) · CGPA 7.3</p>
+        <p style="margin-bottom:0;"><strong>Certifications.</strong> SAFe 5.0 POPM · Product Management Certificate, Product School · Google Associate Cloud Engineer</p>
+      </div>
+    </section>
 
+    <section class="r-sec" style="margin-bottom:0;">
+      <div class="r-sec-title">Selected case studies</div>
+      <ul class="r-cases">
+        <li><a href="./case-quote-automation.html">AI Quote Automation</a> <span>97% faster extraction, ~99.9% accuracy, in production.</span></li>
+        <li><a href="./case-radiology-ai.html">Clinical Radiology AI · 0→1</a> <span>NLP 68 to 88%, $500K+ ARR in 6 months.</span></li>
+        <li><a href="./case-killed-project.html">The $1M project I killed on purpose</a> <span>Compliance-driven discovery kill memo.</span></li>
+        <li><a href="./case-phoenix.html">Phoenix: Legacy Modernization Prototype</a> <span>20-yr, 366-screen legacy rebuilt as an AI-first web app.</span></li>
+      </ul>
+      <p style="margin-top:14px;"><a href="./index.html#work" style="font-size:13.5px;color:var(--gray);">All 9 case studies →</a></p>
+    </section>
+
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="v2-cta">
+  <div class="container">
+    <h2>Let's build what <em>actually ships</em>.</h2>
+    <p>Actively interviewing for PM roles at product-first companies: B2B SaaS, AI-native, healthcare, GRC.</p>
+    <div class="row">
+      <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">krishnashemanth@gmail.com</a>
+      <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn →</a>
     </div>
   </div>
+</section>
 
-  <footer class="site-footer">
-    <div class="footer-inner container">
-      <div class="footer-grid">
-        <div>
-          <img src="./assets/Logo_transparent.png" alt="KrishnaS Hemanth" class="footer-logo">
-          <p class="kicker" style="color:var(--ink-4); margin-bottom:20px;">Let's talk</p>
-          <h2 class="footer-h">Looking for a PM who ships AI<br/>that <em>actually works?</em></h2>
-          <a href="mailto:krishnashemanth@gmail.com" class="btn btn-primary" style="background:var(--accent); color:var(--paper); margin-top:24px;">krishnashemanth@gmail.com <span class="arrow">→</span></a>
-        </div>
-        <div>
-          <p class="kicker" style="color:var(--ink-4); margin-bottom:20px;">Channels</p>
-          <ul class="footer-contact-list">
-            <li><span class="k">Email</span><a href="mailto:krishnashemanth@gmail.com">krishnashemanth@gmail.com</a></li>
-            <li><span class="k">LinkedIn</span><a href="https://linkedin.com/in/krishnashemanth" target="_blank">linkedin.com/in/krishnashemanth</a></li>
-          </ul>
-        </div>
+<footer class="v2-footer">
+  <div class="container">
+    <div class="v2-footer-grid">
+      <div>
+        <a href="./index.html" class="v2-brand" style="margin-bottom:18px;display:inline-flex;">KrishnaS Hemanth<span class="dot">.</span></a>
+        <p class="blurb">Product Manager building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p>
       </div>
-      <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+      <div>
+        <h4>Work</h4>
+        <ul>
+          <li><a href="./case-quote-automation.html">AI Quote Automation</a></li>
+          <li><a href="./index.html#work">All case studies</a></li>
+          <li><a href="./about.html#principles">Principles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:krishnashemanth@gmail.com">Email</a></li>
+          <li><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
-</main>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+    <div class="v2-footer-bottom">
+      <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script>
+  var d = new Date(); document.getElementById('resume-date').textContent = d.toLocaleString('en-US', {month:'short'}) + ' ' + d.getFullYear();
+  var af = new Date(); af.setDate(af.getDate() + 60);
+  var afEl = document.getElementById('available-from');
+  if (afEl) afEl.textContent = af.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+</script>
+<script>
+(function(){
+  var EMAIL = 'krishnashemanth@gmail.com';
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.setAttribute('title', 'Copy email ID');
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var restore = a.innerHTML;
+      function done(){ a.innerHTML = 'Email copied ✓'; setTimeout(function(){ a.innerHTML = restore; }, 1500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(EMAIL).then(done, function(){ window.location.href = 'mailto:' + EMAIL; });
+      } else { window.location.href = 'mailto:' + EMAIL; }
+    });
+  });
+})();
+</script>
+<script data-goatcounter="https://krishnas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

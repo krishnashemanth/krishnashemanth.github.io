@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Phoenix: Legacy Modernization Prototype · Case Study | KrishnaS Hemanth</title>
+<meta name="description" content="Case study: rebuilding a 20-year-old, 366-screen legacy platform as a modern AI-first web application: 60–70% rebuilt completely, the rest on a prioritized migration roadmap." />
+<link rel="icon" type="image/png" href="./assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://krishnashemanth.github.io/case-phoenix.html">
+<meta property="og:title" content="Phoenix: Legacy Modernization Prototype · Case Study | KrishnaS Hemanth">
+<meta property="og:description" content="Case study: rebuilding a 20-year-old, 366-screen legacy platform as a modern AI-first web application: 60–70% rebuilt completely, the rest on a prioritized migration roadmap.">
+<meta property="og:image" content="https://krishnashemanth.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Phoenix: Legacy Modernization Prototype · Case Study | KrishnaS Hemanth">
+<meta name="twitter:description" content="Case study: rebuilding a 20-year-old, 366-screen legacy platform as a modern AI-first web application: 60–70% rebuilt completely, the rest on a prioritized migration roadmap.">
+<meta name="twitter:image" content="https://krishnashemanth.github.io/assets/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./nav-scroll.js"></script>
+</head>
+<body>
+
+<nav class="v2-nav">
+  <div class="v2-nav-inner">
+    <a href="./index.html" class="v2-brand">KrishnaS Hemanth<span class="dot">.</span> <small>PM · AI · Regulated SaaS</small></a>
+    <div class="v2-links">
+      <a href="./index.html#work" class="active">Work</a>
+      <a href="./index.html#expertise">Expertise</a>
+      <a href="./about.html">About</a>
+      <a href="./resume.html">Resume</a>
+    </div>
+    <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">Let's talk</a>
+    <button class="v2-hamburger" aria-label="Menu" onclick="this.closest('.v2-nav').classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="v2-cs-hero">
+  <div class="container">
+    <p class="v2-breadcrumb"><a href="./index.html#work">← All work</a> &nbsp;·&nbsp; Case 05 of 09 · POC / Prototype</p>
+    <div class="v2-meta-chips">
+      <span>Enterprise Healthcare GRC SaaS</span><span>Legacy Modernization Prototype</span><span>Solo · Product + Eng</span><span>2026 · 1–2 months</span>
+    </div>
+    <h1>A 20-year-old, 366-screen legacy monster, <em>rebuilt as a modern application</em>.</h1>
+    <p class="v2-cs-dek">
+      A solo rebuild of a 20-year-old desktop platform as a modern, AI-first web application. Roughly 60–70% of the legacy system is rebuilt completely; the rest is documented as a prioritized migration roadmap instead of pretended parity. The extraction slice proven here shipped separately as a production tool.
+    </p>
+  </div>
+</header>
+
+<section class="v2-impact">
+  <div class="container">
+    <div class="v2-impact-grid" style="grid-template-columns:repeat(4,1fr);">
+      <div><div class="num">&lt;1 min</div><div class="lbl">AI extraction<br />was 30–60 min manual</div></div>
+      <div><div class="num">100<em>%</em></div><div class="lbl">Line recall/precision<br />real test quotes (small sample)</div></div>
+      <div><div class="num">60–70<em>%</em></div><div class="lbl">Of the legacy app<br />rebuilt completely</div></div>
+      <div><div class="num">.NET 8</div><div class="lbl">Backend rebuilt on the<br />enterprise stack, from Python</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">01</span>The problem</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">A 366-window system. One expensive, unglamorous step.</h2>
+        <p>For roughly 20 years, a spend-analysis team ran their entire quote-benchmarking business on a PowerBuilder desktop app over a VDI session. The core daily job was manual: a vendor quote arrives as a PDF or scan, an analyst reads it and types every line item into a form by hand, then compares prices against market benchmarks. That transcription step alone ate 30 to 60 minutes per quote and produced nothing but data entry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">02</span>Discovery</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">A correct decision that quietly expired.</h2>
+        <p>I reverse-engineered the legacy system's scope directly from its codebase: 21 major modules, 366+ screens, a genuinely enormous surface area. But the single biggest pain point was narrow: manual line-item transcription, the one step that was pure mechanical cost with zero judgment value. Five-whys on "why is this still manual?" landed on the real answer: the assumption that a human must transcribe quotes was correct for 20 years, right up until vision-capable LLMs made it tractable, and nobody had re-checked it since.</p>
+        <div class="v2-pullquote">"Parity is not the goal. Rebuild what people actually use, ship the AI capability legacy never had, and roadmap the rest."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">03</span>Approach</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">Rebuild the application. Prove the AI. Keep a fallback.</h2>
+        <p>Rather than porting the legacy app screen-for-screen, a multi-year program that would have faithfully reproduced the same manual bottleneck, I rebuilt it as a modern web application: roughly 60–70% of the legacy system rebuilt completely, prioritized by what analysts actually use daily, plus the AI extraction capability the legacy app never had. The remaining scope is documented as a prioritized migration roadmap instead of pretending it is solved.</p>
+        <div class="v2-callout">
+          <strong>The technical decision:</strong> AI extraction is an optional, pluggable mode with manual entry as a permanent fallback. The product degrades gracefully and is never hostage to a model endpoint being available.
+        </div>
+        <p>The backend started on Python (FastAPI). Partway through the build I learned the rest of the company's applications run on .NET, so I rebuilt the backend on .NET 8 to match the enterprise stack. That is the backend in use today; the Python version is retired. Platform fit beat personal preference, and the prototype stage is exactly where that call should get made.</p>
+        <p>The extraction capability proven inside this prototype didn't stay a prototype: it was the highest-leverage, lowest-risk slice, so it shipped separately as a standalone production tool, <a href="./case-quote-automation.html">AI Quote Automation</a>, now in daily analyst use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">04</span>Outcome</div>
+      <div>
+        <h2 class="v2-cs-h">Validated on real quotes, including the hard cases.</h2>
+        <div class="v2-diff">
+          <div class="v2-diff-row minus"><span class="sign">−</span><span>30–60 min manual transcription</span><span class="tag">before</span></div>
+          <div class="v2-diff-row plus"><span class="sign">+</span><span>Under 1 min, AI extraction</span><span class="tag">after · validated on real quotes</span></div>
+          <div style="height:16px;"></div>
+          <div class="v2-diff-row minus"><span class="sign">−</span><span>VDI-bound desktop app</span><span class="tag">before</span></div>
+          <div class="v2-diff-row plus"><span class="sign">+</span><span>Browser SPA, any device</span><span class="tag">after</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">05</span>My role</div>
+      <div>
+        <h2 class="v2-cs-h">What I owned, solo.</h2>
+        <div class="v2-role-list">
+          <div class="v2-role-item"><div class="k">Discovery</div><div>Reverse-engineered the legacy system's scope; wrote a formal gap analysis to scope the rebuild.</div></div>
+          <div class="v2-role-item"><div class="k">Prompt engineering</div><div>Built the extraction prompt handling sub-line items, prose-embedded quantities, and single-price-column inference.</div></div>
+          <div class="v2-role-item"><div class="k">Full-stack build</div><div>React/TypeScript frontend; backend built on FastAPI, then rebuilt on .NET 8 to match the enterprise stack (the version in use today).</div></div>
+          <div class="v2-role-item"><div class="k">Evaluation</div><div>Built a labeled accuracy harness scoring extraction against hand-labeled ground truth.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section" style="border-bottom:none;">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">06</span>Lessons</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">Scope discipline is what makes AI claims credible.</h2>
+        <p><strong>A prioritized gap analysis is the real scoping weapon.</strong> On a modernization project, it turns "the legacy app is huge and scary" into a rational, defensible plan instead of an excuse to sprawl.</p>
+        <p><strong>Re-examine old assumptions when the underlying technology shifts.</strong> The 20-year manual step wasn't a bad decision. It was correct until it wasn't, and nobody had re-checked.</p>
+        <p><strong>Being explicit about the gap makes the real achievement more credible, not less.</strong> Stating plainly that 60–70% is rebuilt and the rest is on a roadmap, with honestly labeled estimates, is what makes the AI extraction claim trustworthy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-next">
+  <div class="container">
+    <div class="v2-next-row">
+      <a href="./case-compliance-content-ai.html" class="big">Next case · Compliance Content AI <span>→</span></a>
+      <a href="./index.html#work" style="font-size:13.5px;color:var(--gray);">← All work</a>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cta">
+  <div class="container">
+    <h2>Let's build what <em>actually ships</em>.</h2>
+    <p>Actively interviewing for PM roles at product-first companies: B2B SaaS, AI-native, healthcare, GRC.</p>
+    <div class="row">
+      <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">krishnashemanth@gmail.com</a>
+      <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="v2-footer">
+  <div class="container">
+    <div class="v2-footer-grid">
+      <div>
+        <a href="./index.html" class="v2-brand" style="margin-bottom:18px;display:inline-flex;">KrishnaS Hemanth<span class="dot">.</span></a>
+        <p class="blurb">Product Manager building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p>
+      </div>
+      <div>
+        <h4>Work</h4>
+        <ul>
+          <li><a href="./case-quote-automation.html">AI Quote Automation</a></li>
+          <li><a href="./index.html#work">All case studies</a></li>
+          <li><a href="./about.html#principles">Principles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:krishnashemanth@gmail.com">Email</a></li>
+          <li><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="v2-footer-bottom">
+      <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+(function(){
+  var EMAIL = 'krishnashemanth@gmail.com';
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.setAttribute('title', 'Copy email ID');
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var restore = a.innerHTML;
+      function done(){ a.innerHTML = 'Email copied ✓'; setTimeout(function(){ a.innerHTML = restore; }, 1500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(EMAIL).then(done, function(){ window.location.href = 'mailto:' + EMAIL; });
+      } else { window.location.href = 'mailto:' + EMAIL; }
+    });
+  });
+})();
+</script>
+<script data-goatcounter="https://krishnas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
