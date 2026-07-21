@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Regulatory Intelligence Agent Pipeline · Case Study | KrishnaS Hemanth</title>
+<meta name="description" content="Case study: a five-agent AI pipeline that drafts grounded regulatory-change impact assessments, with mandatory human approval and zero tolerance for fabricated citations." />
+<link rel="icon" type="image/png" href="./assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://krishnashemanth.github.io/case-regulatory-intelligence.html">
+<meta property="og:title" content="Regulatory Intelligence Agent Pipeline · Case Study | KrishnaS Hemanth">
+<meta property="og:description" content="Case study: a five-agent AI pipeline that drafts grounded regulatory-change impact assessments, with mandatory human approval and zero tolerance for fabricated citations.">
+<meta property="og:image" content="https://krishnashemanth.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Regulatory Intelligence Agent Pipeline · Case Study | KrishnaS Hemanth">
+<meta name="twitter:description" content="Case study: a five-agent AI pipeline that drafts grounded regulatory-change impact assessments, with mandatory human approval and zero tolerance for fabricated citations.">
+<meta name="twitter:image" content="https://krishnashemanth.github.io/assets/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./nav-scroll.js"></script>
+</head>
+<body>
+
+<nav class="v2-nav">
+  <div class="v2-nav-inner">
+    <a href="./index.html" class="v2-brand">KrishnaS Hemanth<span class="dot">.</span> <small>PM · AI · Regulated SaaS</small></a>
+    <div class="v2-links">
+      <a href="./index.html#work" class="active">Work</a>
+      <a href="./index.html#expertise">Expertise</a>
+      <a href="./about.html">About</a>
+      <a href="./resume.html">Resume</a>
+    </div>
+    <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">Let's talk</a>
+    <button class="v2-hamburger" aria-label="Menu" onclick="this.closest('.v2-nav').classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="v2-cs-hero">
+  <div class="container">
+    <p class="v2-breadcrumb"><a href="./index.html#work">← All work</a> &nbsp;·&nbsp; Case 07 of 09 · POC</p>
+    <div class="v2-meta-chips">
+      <span>Enterprise Healthcare GRC SaaS</span><span>Healthcare Compliance</span><span>Solo · Product + AI</span><span>2026 · POC</span>
+    </div>
+    <h1>Five small agents. One rule: <em>never fabricate a citation</em>.</h1>
+    <p class="v2-cs-dek">
+      A multi-agent pipeline that watches regulatory sources, scores relevance per customer, and drafts a grounded impact assessment, with mandatory human approval before any of it counts.
+    </p>
+  </div>
+</header>
+
+<section class="v2-impact">
+  <div class="container">
+    <div class="v2-impact-grid" style="grid-template-columns:repeat(4,1fr);">
+      <div><div class="num">&lt;15<em>%</em></div><div class="lbl">Target edit-rate<br />AI drafts a human must rewrite</div></div>
+      <div><div class="num">5</div><div class="lbl">Single-purpose agents<br />ingest → relevance → detect → synthesize → Q&amp;A</div></div>
+      <div><div class="num">0</div><div class="lbl">Fabricated citations tolerated<br />grounded-or-silent by design</div></div>
+      <div><div class="num"><em>$</em>0</div><div class="lbl">Infra cost<br />runs offline, mock-AI demo mode</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">01</span>The problem</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">Missing a regulatory change isn't a small mistake.</h2>
+        <p>Healthcare compliance teams manually watch a shifting body of federal and state regulation. Today that means reading the source, noticing a change (or not), judging whether it applies to their facility, and writing an impact memo from scratch, every time. Miss one and the consequence is a failed survey or a repayment demand, not a missed Slack message.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">02</span>Discovery</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">Detecting change is easy. Judging relevance is the real cost.</h2>
+        <p>Diffing a document is trivial. The expensive human work is deciding whether a change actually applies to a specific facility, and then translating dense regulatory text into a plain-language, correctly cited recommendation. Relevance has to be scored against an explicit customer profile (programs, facility types, jurisdictions), not judged globally, or the signal drowns in noise.</p>
+        <div class="v2-pullquote">"A compliance tool that fabricates a citation once is dead. Over-conservative beats confidently wrong."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">03</span>Approach</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">One job per agent. A human decides everything.</h2>
+        <p>Instead of one large prompt trying to do everything, the pipeline splits into five single-purpose agents: ingestion detects and diffs changes, relevance scores each one against a customer profile (acting as a cost gate before the expensive step), detection classifies severity, synthesis drafts a cited impact assessment grounded only in retrieved source text, and a conversational agent answers ad-hoc questions the same way.</p>
+        <div class="v2-callout">
+          <strong>The non-negotiable rule:</strong> the synthesis agent cites retrieved source text or says "source not identified." It is never allowed to guess a citation. Every assessment then lands in a human approval queue; nothing publishes unreviewed.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">04</span>Outcome</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">A working pipeline, honestly labeled as a POC.</h2>
+        <p>This is a solo proof of concept, not a production deployment, and I'm explicit about that rather than overstating it. It runs fully end to end, including an offline mock-AI mode so the whole flow is demoable with zero cloud credentials. The design target is a sub-15% edit rate: the share of AI-drafted assessments a human has to meaningfully rewrite before approving, the single number that proves whether the AI is actually trustworthy or just theater.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">05</span>My role</div>
+      <div>
+        <h2 class="v2-cs-h">What I owned, solo.</h2>
+        <div class="v2-role-list">
+          <div class="v2-role-item"><div class="k">Architecture</div><div>Designed the five-agent pipeline and the model-tier abstraction that lets any agent be upgraded later without touching agent code.</div></div>
+          <div class="v2-role-item"><div class="k">Guardrail design</div><div>Built the grounding-only citation rule, the advisory-not-gating validation, and the mandatory human approval queue.</div></div>
+          <div class="v2-role-item"><div class="k">RAG</div><div>Chunking, embeddings, and retrieval feeding the synthesis agent's grounded context.</div></div>
+          <div class="v2-role-item"><div class="k">Full build</div><div>Backend, frontend, and a dual local/production runtime so the demo needs zero setup.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cs-section" style="border-bottom:none;">
+  <div class="container">
+    <div class="v2-cs-grid">
+      <div class="v2-cs-label"><span class="num">06</span>Lessons</div>
+      <div class="v2-prose">
+        <h2 class="v2-cs-h">Design for the acceptable failure mode, explicitly.</h2>
+        <p><strong>In high-stakes AI, guardrails are the product.</strong> Human-in-the-loop isn't a fallback bolted on afterward; it's the reason the tool is adoptable at all in a domain where being confidently wrong is worse than being slow.</p>
+        <p><strong>A single trust metric beats a dozen vanity ones.</strong> Edit rate is a direct proxy for "is this actually good enough to use," and designing the whole pipeline around moving that one number kept the scope honest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-next">
+  <div class="container">
+    <div class="v2-next-row">
+      <a href="./case-command-center.html" class="big">Next case · Command Center, a personal PM workspace <span>→</span></a>
+      <a href="./index.html#work" style="font-size:13.5px;color:var(--gray);">← All work</a>
+    </div>
+  </div>
+</section>
+
+<section class="v2-cta">
+  <div class="container">
+    <h2>Let's build what <em>actually ships</em>.</h2>
+    <p>Actively interviewing for PM roles at product-first companies: B2B SaaS, AI-native, healthcare, GRC.</p>
+    <div class="row">
+      <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">krishnashemanth@gmail.com</a>
+      <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="v2-footer">
+  <div class="container">
+    <div class="v2-footer-grid">
+      <div>
+        <a href="./index.html" class="v2-brand" style="margin-bottom:18px;display:inline-flex;">KrishnaS Hemanth<span class="dot">.</span></a>
+        <p class="blurb">Product Manager building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p>
+      </div>
+      <div>
+        <h4>Work</h4>
+        <ul>
+          <li><a href="./case-quote-automation.html">AI Quote Automation</a></li>
+          <li><a href="./index.html#work">All case studies</a></li>
+          <li><a href="./about.html#principles">Principles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:krishnashemanth@gmail.com">Email</a></li>
+          <li><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="v2-footer-bottom">
+      <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+(function(){
+  var EMAIL = 'krishnashemanth@gmail.com';
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.setAttribute('title', 'Copy email ID');
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var restore = a.innerHTML;
+      function done(){ a.innerHTML = 'Email copied ✓'; setTimeout(function(){ a.innerHTML = restore; }, 1500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(EMAIL).then(done, function(){ window.location.href = 'mailto:' + EMAIL; });
+      } else { window.location.href = 'mailto:' + EMAIL; }
+    });
+  });
+})();
+</script>
+<script data-goatcounter="https://krishnas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
