@@ -3,219 +3,190 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Compliance Content AI · Case Study | KrishnaS Hemanth</title>
-<meta name="description" content="Case study: a $0, 4-week AI proof of concept that drafts healthcare compliance question sets from federal regulations, before asking for the build budget." />
+<title>Regulatory Intelligence Engine · Case Study | KrishnaS Hemanth</title>
+<meta name="description" content="Case study: A continuous monitoring pipeline that uses HTML scraping and Claude 3.5 Sonnet to translate regulatory changes into an Obligation → Policy → Action workflow." />
 <link rel="icon" type="image/png" href="./assets/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://krishnashemanth.github.io/case-compliance-content-ai.html">
-<meta property="og:title" content="Compliance Content AI · Case Study | KrishnaS Hemanth">
-<meta property="og:description" content="Case study: a $0, 4-week AI proof of concept that drafts healthcare compliance question sets from federal regulations, before asking for the build budget.">
-<meta property="og:image" content="https://krishnashemanth.github.io/assets/og.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Compliance Content AI · Case Study | KrishnaS Hemanth">
-<meta name="twitter:description" content="Case study: a $0, 4-week AI proof of concept that drafts healthcare compliance question sets from federal regulations, before asking for the build budget.">
-<meta name="twitter:image" content="https://krishnashemanth.github.io/assets/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
-<script defer src="./nav-scroll.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css?v=3">
 </head>
 <body>
 
-<nav class="v2-nav">
-  <div class="v2-nav-inner">
-    <a href="./index.html" class="v2-brand">KrishnaS Hemanth<span class="dot">.</span> <small>PM · AI · Regulated SaaS</small></a>
-    <div class="v2-links">
-      <a href="./index.html#work" class="active">Work</a>
-      <a href="./index.html#expertise">Expertise</a>
-      <a href="./about.html">About</a>
-      <a href="./resume.html">Resume</a>
-    </div>
-    <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">Let's talk</a>
-    <button class="v2-hamburger" aria-label="Menu" onclick="this.closest('.v2-nav').classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+<nav class="v3-nav">
+  <div class="v3-nav-inner">
+    <a href="./index.html" class="v3-brand"><span class="dot"></span><span class="v3-brand-text"><span class="name">KrishnaS Hemanth</span><span class="tag">PO · AI · Regulated SaaS</span></span></a>
+    <div class="v3-links"><a href="./index.html">Home</a><a href="./selected-work.html" class="active">Work</a><a href="./expertise.html">Expertise</a><a href="./about.html">About &amp; Timeline</a><a href="./resume.html">Resume</a></div>
+    <div class="v3-nav-cta"><a href="mailto:krishnashemanth@gmail.com" class="v3-btn v3-btn-primary">Get in touch</a></div>
+    <button class="v3-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
+  <div class="v3-mobile-menu"><a href="./index.html">Home</a><a href="./selected-work.html" class="active">Work</a><a href="./expertise.html">Expertise</a><a href="./about.html">About &amp; Timeline</a><a href="./resume.html">Resume</a><a href="mailto:krishnashemanth@gmail.com">Get in touch</a></div>
 </nav>
 
-<header class="v2-cs-hero">
+<header class="v3-cs-hero">
   <div class="container">
-    <p class="v2-breadcrumb"><a href="./index.html#work">← All work</a> &nbsp;·&nbsp; Case 06 of 09 · POC</p>
-    <div class="v2-meta-chips">
-      <span>Enterprise Healthcare GRC SaaS</span><span>AI Compliance Tooling</span><span>Product Owner</span><span>2026 · 4-week POC</span>
+    <p class="v3-breadcrumb"><a href="./selected-work.html">← All work</a> &nbsp;·&nbsp; Case 02 of 08 · POC · Completed</p>
+    <div class="v3-cs-head-grid">
+      <div>
+        <h1 class="v3-h1">Hospitals track thousands of regulations. <em style="font-style:normal;color:var(--blue-600);">Missing one</em> is an existential risk.</h1>
+        <p class="v3-body-lg v3-muted" style="margin-top:12px;max-width:640px;">We built a continuous monitoring engine that uses HTML scraping and Claude 3.5 Sonnet to translate regulatory changes into a strict Obligation → Policy → Action workflow, drastically reducing manual review time.</p>
+      </div>
+      <div class="v3-cs-meta-card">
+        <span class="v3-label-sm v3-muted">Context</span>
+        <div class="tags"><span class="v3-tag">Enterprise Healthcare GRC SaaS</span><span class="v3-tag">AI Compliance Tooling</span><span class="v3-tag">Product Owner</span><span class="v3-tag">2026 · Two solo POCs</span></div>
+      </div>
     </div>
-    <h1>Compliance officers shouldn't be <em>typing questions off a PDF</em>.</h1>
-    <p class="v2-cs-dek">
-      A $0, four-week proof of concept that reads federal healthcare regulations and drafts compliance question sets in minutes, built to prove the AI would actually work before asking anyone to fund it.
-    </p>
-  </div>
+    </div>
 </header>
 
-<section class="v2-impact">
+<section data-screen-label="05 Impact strip" style="background:#fff;padding:32px 0;" class="v3-reveal">
   <div class="container">
-    <div class="v2-impact-grid" style="grid-template-columns:repeat(4,1fr);">
-      <div><div class="num">~2 min</div><div class="lbl">To generate 252 questions<br />vs. days, manually</div></div>
-      <div><div class="num">98<em>%</em></div><div class="lbl">Passed validation<br />guardrails (demo run)</div></div>
-      <div><div class="num">70–80<em>%</em></div><div class="lbl">Projected editorial time cut<br />(target, not yet measured)</div></div>
-      <div><div class="num"><em>$</em>0</div><div class="lbl">Infra spend<br />local POC, solo build</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">01</span>The problem</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">Two people, hand-authoring every question and every field.</h2>
-        <p>The compliance question-set product sells curated checklists that let a hospital self-assess against federal healthcare regulations. A two-person editorial team reads 30–40 page regulatory documents line by line, drafts a question for every requirement, and hand-populates 14 metadata fields per question: category, citation, risk score, entity type, and more. A single document takes days. Every existing question set then needs quarterly re-review against the current regulation, with no diff tool, so re-checking means re-reading the whole thing.</p>
+    <div style="text-transform:uppercase;letter-spacing:2.5px;font-size:12px;font-weight:600;color:var(--green-600);margin-bottom:14px;">Impact · Regulatory Intelligence Engine</div>
+    <div class="impact-strip-grid">
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">&lt; 1 min</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Scan per source</div>
+        <div style="font-size:13px;font-weight:300;color:#6c757d;">vs. 2 days manually</div>
+      </div>
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">Claude 3.5</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Sonnet on Bedrock</div>
+        <div style="font-size:13px;font-weight:300;color:#6c757d;">For drafting legal impacts</div>
+      </div>
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">5</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Agents, monitoring pipeline</div>
+      </div>
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">Hashed</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">HTML Snapshots</div>
+        <div style="font-size:13px;font-weight:300;color:#6c757d;">For precise delta detection</div>
+      </div>
+      <div class="impact-item-error">
+        <div style="font-size:30px;font-weight:700;color:#c43b3b;line-height:1;letter-spacing:-.5px;white-space:nowrap;">Scale</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#7a2119;">Scraper Bottleneck</div>
+        <div style="font-size:13px;font-weight:300;color:#7a2119;">Nested DOMs require manual setup</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">02</span>Discovery</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">The manual step wasn't dumb. It just quietly expired.</h2>
-        <p>Mapping the workflow surfaced a clean split: the mechanical majority of the work (extraction, formatting, first-pass classification) is automatable. The expert minority, final judgment on correctness and risk, is not, and shouldn't be. Five-whys on "why is this still manual in 2026?" landed on the real root cause: a workflow assumption, <em>humans must transcribe this</em>, that was true for years and stopped being true once vision-capable LLMs got good enough to read dense regulatory prose. Nobody had re-checked the assumption.</p>
-        <div class="v2-pullquote">"A compliance tool that fabricates a citation once is dead. The design has to make that structurally impossible, not just unlikely."</div>
+<div class="container v3-cs-body">
+  <aside class="v3-cs-side">
+    <div class="v3-cs-side-inner">
+      <div class="v3-cs-navcard">
+        <h4>On this page</h4>
+        <nav>
+          <a href="#problem">01 · The problem</a>
+          <a href="#approach">02 · Architecture</a>
+          <a href="#outcome">03 · Outcome &amp; Caveats</a>
+        </nav>
       </div>
     </div>
-  </div>
-</section>
+  </aside>
 
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">03</span>Approach</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">AI drafts. A human approves. Nothing ships unreviewed.</h2>
-        <p>Two pipelines: one reads a regulatory document and drafts a full question set matching the editorial team's exact template; the other snapshots a regulatory source, diffs it against the last version, and classifies what actually changed. Both are strictly advisory: the model never auto-publishes, and if it can't ground a citation in the source text, it flags <strong>[VERIFY]</strong> instead of guessing.</p>
-        <div class="v2-callout">
-          <strong>The scoping call:</strong> built it as a zero-budget, local proof of concept first, with no cloud spend and no infrastructure ask, specifically to prove AI output quality before pitching the larger investment. A POC's job is to de-risk the bet, not impress a demo audience.
-        </div>
+  <div>
+    <article class="v3-chapter" id="problem">
+      <div class="v3-chapter-head"><span class="num">Chapter 01</span><span class="rule"></span><span class="cat">Problem space</span></div>
+      <h2 class="v3-h2">Regulatory content is expensive to track, and missing an update is existential.</h2>
+      <div class="v3-prose">
+        <p>Hospitals have to track thousands of pages of federal and state regulations - from the eCFR, CMS, OIG, state medical boards, and other regulatory bodies. Before we built this engine, the process was entirely manual. Someone read through bulletins taking up to <strong>2 days per source</strong>, trying to determine what applies to each customer and identifying what changed.</p>
+        <p>It's slow, expensive, and critical updates are easily missed.</p>
       </div>
-    </div>
-  </div>
-</section>
+    </article>
 
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">04</span>Outcome</div>
-      <div>
-        <h2 class="v2-cs-h">A real demo run, honestly labeled.</h2>
-        <div class="v2-diff">
-          <div class="v2-diff-row minus"><span class="sign">−</span><span>232 questions, multiple days</span><span class="tag">manual (baseline)</span></div>
-          <div class="v2-diff-row plus"><span class="sign">+</span><span>252 questions, ~2 minutes</span><span class="tag">AI draft (demo run)</span></div>
-          <div style="height:16px;"></div>
-          <div class="v2-diff-row minus"><span class="sign">−</span><span>No change-alerting at all</span><span class="tag">before</span></div>
-          <div class="v2-diff-row plus"><span class="sign">+</span><span>98% of drafts passed guardrails</span><span class="tag">demo run, unvalidated by editors</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">05</span>My role</div>
-      <div>
-        <h2 class="v2-cs-h">What I owned, solo.</h2>
-        <div class="v2-role-list">
-          <div class="v2-role-item"><div class="k">Discovery</div><div>Process-mapped the manual workflow with the editorial team; built the automation map that separated mechanical from expert work.</div></div>
-          <div class="v2-role-item"><div class="k">Product framing</div><div>Positioned the tool as an accelerator, not a replacement, the decision that made it adoptable in a trust-sensitive domain.</div></div>
-          <div class="v2-role-item"><div class="k">Prompt &amp; guardrail design</div><div>Wrote the extraction prompt, the citation-grounding rules, and the validation checks that flag rather than fabricate.</div></div>
-          <div class="v2-role-item"><div class="k">Full build</div><div>Ingestion, both AI pipelines, a small web UI, all in a four-week, zero-budget window.</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="v2-cs-section" style="border-bottom:none;">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">06</span>Lessons</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">Framing is the product, not a feature of it.</h2>
-        <p><strong>Assist vs. replace is the real product decision.</strong> In a trust-sensitive domain, that framing choice matters more than any single feature. It's the difference between a tool a compliance team adopts and one they fear.</p>
-        <p><strong>A cheap POC is how you earn the expensive conversation.</strong> Proving AI quality at zero infrastructure cost is what unlocks the budget conversation for the real build, not the other way around.</p>
-        <p><strong>Never let the model choose between citing and fabricating.</strong> Give it a third option, flag for review, and the failure mode becomes "too cautious," never "confidently wrong."</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="v2-next">
-  <div class="container">
-    <div class="v2-next-row">
-      <a href="./case-regulatory-intelligence.html" class="big">Next case · Regulatory Intelligence Agent Pipeline <span>→</span></a>
-      <a href="./index.html#work" style="font-size:13.5px;color:var(--gray);">← All work</a>
-    </div>
-  </div>
-</section>
-
-<section class="v2-cta">
-  <div class="container">
-    <h2>Let's build what <em>actually ships</em>.</h2>
-    <div class="row">
-      <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">krishnashemanth@gmail.com</a>
-      <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn →</a>
-    </div>
-  </div>
-</section>
-
-<footer class="v2-footer">
-  <div class="container">
-    <div class="v2-footer-grid">
-      <div>
-        <a href="./index.html" class="v2-brand" style="margin-bottom:18px;display:inline-flex;">KrishnaS Hemanth<span class="dot">.</span></a>
-        <p class="blurb">Product Manager building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p>
-      </div>
-      <div>
-        <h4>Work</h4>
-        <ul>
-          <li><a href="./case-quote-automation.html">AI Quote Automation</a></li>
-          <li><a href="./index.html#work">All case studies</a></li>
-          <li><a href="./about.html#principles">Principles</a></li>
+    <article class="v3-chapter" id="approach">
+      <div class="v3-chapter-head"><span class="num">Chapter 02</span><span class="rule"></span><span class="cat">Architecture</span></div>
+      <h2 class="v3-h2">The Obligation → Policy → Action Workflow</h2>
+      <div class="v3-prose">
+        <p>We built a system that automatically monitors these government sources, determines what is relevant to each customer, and drafts a clear summary of what changed using Claude 3.5 Sonnet on AWS Bedrock. The system translates the legalese into a strict data model:</p>
+        <ul style="padding-left:20px;line-height:1.8;">
+          <li><strong>Obligation:</strong> The legal requirement the provider must follow.</li>
+          <li><strong>Policy:</strong> The provider's internal document that explains how they will comply.</li>
+          <li><strong>Action:</strong> The specific task assigned to fix or update a policy.</li>
         </ul>
+        <p><strong>The Delta Engine:</strong> We integrated live APIs where available, but many government sites required custom HTML scrapers. When a page is scanned, it creates a hashed snapshot. On the next scan, it compares the hash against the previous version, isolates the exact HTML delta, and flags it for the LLM to process.</p>
       </div>
-      <div>
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="mailto:krishnashemanth@gmail.com">Email</a></li>
-          <li><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-        </ul>
+      <div class="v3-flow-container">
+  <div class="v3-flow-track">
+    <div class="v3-flow-node source">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+      <h5>Gov Sources</h5><p>eCFR, CMS, APIs</p>
+    </div>
+    <div class="v3-flow-arrow long"><span class="v3-flow-arrow-label">Monitor & Hash</span></div>
+    <div class="v3-flow-node ai">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5z"></path></svg></div>
+      <h5>Claude 3.5 Sonnet</h5><p>Delta Extraction</p>
+    </div>
+    <div class="v3-flow-arrow long"><span class="v3-flow-arrow-label">Structured JSON</span></div>
+    <div class="v3-flow-node rules">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+      <h5>Obligation Model</h5><p>Policy & Action</p>
+    </div>
+    <div class="v3-flow-arrow"></div>
+    <div class="v3-flow-node human">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg></div>
+      <h5>HITL Dashboard</h5><p>Approve / Reject</p>
+    </div>
+    <div class="v3-flow-arrow"></div>
+    <div class="v3-flow-node output">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+      <h5>Publish</h5><p>Client Alert</p>
+    </div>
+  </div>
+</div>
+      <div class="v3-honest-box" style="margin-top:24px;">
+        <p><strong>The Human-in-the-Loop Rule:</strong> The LLM drafts the policy and impact, but it never publishes automatically. It routes to a human reviewer who sees a dashboard with the AI's confidence score and must explicitly click <em>Approve, Reject, or Approve with edits.</em></p>
+      </div>
+    </article>
+
+    <article class="v3-chapter" id="outcome">
+      <div class="v3-chapter-head"><span class="num">Chapter 03</span><span class="rule"></span><span class="cat">Outcome &amp; Caveats</span></div>
+      <h2 class="v3-h2">Scanning time dropped from days to seconds, but scrapers don't scale infinitely.</h2>
+      <div class="v3-prose">
+        <p>The POC successfully reduced the time required to scan and process a regulatory update from <strong>2 days per source to under 1 minute</strong>.</p>
+      </div>
+      <div class="v3-guard-grid" style="margin-top:24px;">
+        <div class="v3-guard-card"><h4>The Success</h4><p class="v3-body-sm">The combination of Hashed HTML snapshots and Sonnet 3.5 proved incredibly effective at pinpointing exact legal changes without hallucination.</p></div>
+        <div class="v3-guard-card"><h4>The Bottleneck (Honest Take)</h4><p class="v3-body-sm">While live APIs work flawlessly, the HTML scrapers require massive manual effort to set up for deeply nested, multi-page government websites. Feeding the engine URL by URL is the current blocker to full GA scale.</p></div>
+      </div>
+    </article>
+
+      </div>
+    </article>
+
+    <a class="v3-next-teaser v3-mt-lg" href="./case-phoenix.html">
+      <div><span class="v3-eyebrow" style="color:var(--outline);">Next case</span><h3 class="v3-h3">Phoenix: Legacy Modernization</h3><p class="v3-body-sm">A solo rebuild of a 20-year-old desktop platform.</p></div>
+      <div class="arrow">&rarr;</div>
+    </a>
+  </div>
+</div>
+
+<section class="v3-cta-band">
+  <div class="container">
+    <div class="v3-cta-card">
+      <div><h2 class="v3-h2">Let's build what <em style="color:var(--green-tint);font-style:normal;">actually ships</em>.</h2></div>
+      <div class="v3-cta-actions">
+        <a href="mailto:krishnashemanth@gmail.com" class="v3-btn v3-btn-primary">krishnashemanth@gmail.com</a>
+        <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="v3-btn v3-btn-outline-light">LinkedIn →</a>
       </div>
     </div>
-    <div class="v2-footer-bottom">
-      <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
+  </div>
+</section>
+
+<footer class="v3-footer">
+  <div class="container">
+    <div class="v3-footer-grid">
+      <div class="v3-footer-brand"><a href="./index.html" class="v3-brand" style="margin-bottom:14px;"><span class="dot"></span><span class="v3-brand-text"><span class="name">KrishnaS Hemanth</span></span></a><p>Product Owner building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p></div>
+      <div class="v3-footer-col"><h4>Work</h4><a href="./selected-work.html">All case studies</a><a href="./case-quote-automation.html">Quote Automation</a><a href="./expertise.html">Expertise</a></div>
+      <div class="v3-footer-col"><h4>Deep dives</h4><a href="./about.html">About &amp; Timeline</a><a href="./about.html#principles">Principles</a><a href="./resume.html">Resume</a></div>
+      <div class="v3-footer-col wide"><h4>Connect</h4><a href="mailto:krishnashemanth@gmail.com">Email</a><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
+    <div class="v3-footer-bottom"><span>© <span id="v3-year">2026</span> Krishnasai Hemanth Randhi</span></div>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script>
-(function(){
-  var EMAIL = 'krishnashemanth@gmail.com';
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.setAttribute('title', 'Copy email ID');
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      var restore = a.innerHTML;
-      function done(){ a.innerHTML = 'Email copied ✓'; setTimeout(function(){ a.innerHTML = restore; }, 1500); }
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(EMAIL).then(done, function(){ window.location.href = 'mailto:' + EMAIL; });
-      } else { window.location.href = 'mailto:' + EMAIL; }
-    });
-  });
-})();
-</script>
-<script data-goatcounter="https://krishnas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="./script.js"></script>
+
 </body>
 </html>
