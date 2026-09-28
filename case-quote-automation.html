@@ -4,239 +4,303 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>AI Quote Automation · Case Study | KrishnaS Hemanth</title>
-<meta name="description" content="Case study: LLM + RAG quote automation at an enterprise healthcare GRC platform. 97% faster extraction, ~99.9% accuracy, zero added headcount." />
+<meta name="description" content="Case study: LLM + business-rules quote automation for healthcare procurement. Quotes per analyst up 11.7%, line items per quote up 30% with handling time flat, 99.9% extraction accuracy." />
 <link rel="icon" type="image/png" href="./assets/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://krishnashemanth.github.io/case-quote-automation.html">
-<meta property="og:title" content="AI Quote Automation · Case Study | KrishnaS Hemanth">
-<meta property="og:description" content="Case study: LLM + RAG quote automation at an enterprise healthcare GRC platform. 97% faster extraction, ~99.9% accuracy, zero added headcount.">
-<meta property="og:image" content="https://krishnashemanth.github.io/assets/og.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Quote Automation · Case Study | KrishnaS Hemanth">
-<meta name="twitter:description" content="Case study: LLM + RAG quote automation at an enterprise healthcare GRC platform. 97% faster extraction, ~99.9% accuracy, zero added headcount.">
-<meta name="twitter:image" content="https://krishnashemanth.github.io/assets/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
-<script defer src="./nav-scroll.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css?v=3">
 </head>
 <body>
 
-<nav class="v2-nav">
-  <div class="v2-nav-inner">
-    <a href="./index.html" class="v2-brand">KrishnaS Hemanth<span class="dot">.</span> <small>PM · AI · Regulated SaaS</small></a>
-    <div class="v2-links">
-      <a href="./index.html#work" class="active">Work</a>
-      <a href="./index.html#expertise">Expertise</a>
-      <a href="./about.html">About</a>
-      <a href="./resume.html">Resume</a>
-    </div>
-    <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">Let's talk</a>
-    <button class="v2-hamburger" aria-label="Menu" onclick="this.closest('.v2-nav').classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+<nav class="v3-nav">
+  <div class="v3-nav-inner">
+    <a href="./index.html" class="v3-brand"><span class="dot"></span><span class="v3-brand-text"><span class="name">KrishnaS Hemanth</span><span class="tag">PO · AI · Regulated SaaS</span></span></a>
+    <div class="v3-links"><a href="./index.html">Home</a><a href="./selected-work.html" class="active">Work</a><a href="./expertise.html">Expertise</a><a href="./about.html">About &amp; Timeline</a><a href="./resume.html">Resume</a></div>
+    <div class="v3-nav-cta"><a href="mailto:krishnashemanth@gmail.com" class="v3-btn v3-btn-primary">Get in touch</a></div>
+    <button class="v3-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
+  <div class="v3-mobile-menu"><a href="./index.html">Home</a><a href="./selected-work.html" class="active">Work</a><a href="./expertise.html">Expertise</a><a href="./about.html">About &amp; Timeline</a><a href="./resume.html">Resume</a><a href="mailto:krishnashemanth@gmail.com">Get in touch</a></div>
 </nav>
 
-<!-- CASE HERO -->
-<header class="v2-cs-hero">
+<header class="v3-cs-hero">
   <div class="container">
-    <p class="v2-breadcrumb"><a href="./index.html#work">← All work</a> &nbsp;·&nbsp; Case 01 of 09 · Shipped</p>
-    <div class="v2-meta-chips">
-      <span>Enterprise Healthcare GRC SaaS</span><span>Product Owner</span><span>LLM + RAG</span><span>2026 · In production</span>
+    <p class="v3-breadcrumb"><a href="./selected-work.html">← All work</a> &nbsp;·&nbsp; Case 01 of 08 · Shipped · Phase 1 delivered</p>
+    <div class="v3-cs-head-grid">
+      <div>
+        <h1 class="v3-h1">Quote Parser: nine supplier formats in, clean line items out, with an analyst checking every row.</h1>
+        <p class="v3-body-lg v3-muted" style="margin-top:12px;max-width:640px;">A healthcare purchasing analytics team prices supplier quotes for hospitals. Before any of that judgment could happen, analysts retyped every line by hand. I led the AI + business-rules engine that replaced the retyping. The judgment stays with the analyst.</p>
+      </div>
+      <div class="v3-cs-meta-card">
+        <span class="v3-label-sm v3-muted">Architecture &amp; role</span>
+        <div class="tags">
+          <span class="v3-tag">Claude on AWS Bedrock</span><span class="v3-tag">FastAPI · React</span><span class="v3-tag">Product Owner, sole builder</span><span class="v3-tag">Oct–Dec 2025 build</span><span class="v3-tag">In production since Jan 2026</span>
+        </div>
+      </div>
     </div>
-    <h1>Quote automation, built for the humans who <em>still sign off</em>.</h1>
-    <p class="v2-cs-dek">
-      An LLM + RAG pipeline cut per-quote extraction time by ~97% (30–40 min → under 1 min) and held ~99.9% accuracy, without taking the human out of compliance.
-    </p>
+
   </div>
 </header>
 
-<!-- IMPACT BAND -->
-<section class="v2-impact">
+<section data-screen-label="05 Impact strip" style="background:#fff;padding:32px 0;" class="v3-reveal">
   <div class="container">
-    <div class="v2-impact-grid">
-      <div><div class="num">38<em>%</em></div><div class="lbl">Faster turnaround<br />3.2 → 1.5–2 days</div></div>
-      <div><div class="num">97<em>%</em></div><div class="lbl">Faster extraction<br />30–40 min → &lt;1 min</div></div>
-      <div><div class="num">99.9<em>%</em></div><div class="lbl">Extraction accuracy<br />~1 error / 1,000 quotes</div></div>
-      <div><div class="num"><em>$</em>5–7M</div><div class="lbl">Savings identified<br />hospital client POC</div></div>
-      <div><div class="num">67</div><div class="lbl">NPS, spend<br />management product</div></div>
-      <div><div class="num">0</div><div class="lbl">New headcount<br />needed</div></div>
+    <div style="text-transform:uppercase;letter-spacing:2.5px;font-size:12px;font-weight:600;color:var(--green-600);margin-bottom:14px;">Impact · AI quote automation</div>
+    <div class="impact-strip-grid">
+      <div class="impact-item-success"><div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">+11.7%</div><div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Quotes / analyst</div><div style="font-size:13px;font-weight:300;color:#6c757d;">vs 131.6 in 2025</div></div>
+      <div class="impact-item-success"><div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">+30.3%</div><div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Line items</div><div style="font-size:13px;font-weight:300;color:#6c757d;">Time held flat</div></div>
+      <div class="impact-item-success"><div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">99.9%</div><div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Accuracy</div><div style="font-size:13px;font-weight:300;color:#6c757d;">~1 / 1,000 quotes</div></div>
+      <div class="impact-item-success"><div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">Jan '26</div><div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Live since</div><div style="font-size:13px;font-weight:300;color:#6c757d;">Built Oct–Dec '25</div></div>
+      <div class="impact-item-success"><div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">$0.03–.06</div><div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Cost / quote</div><div style="font-size:13px;font-weight:300;color:#6c757d;">5–45 sec latency</div></div>
+      <div class="impact-item-error"><div style="font-size:30px;font-weight:700;color:#c43b3b;line-height:1;letter-spacing:-.5px;white-space:nowrap;">3.45d</div><div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#7a2119;">Guardrail</div><div style="font-size:13px;font-weight:300;color:#7a2119;">Delivery ↑ 8.5%</div></div>
     </div>
   </div>
 </section>
 
-<!-- 01 PROBLEM -->
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">01</span>The problem</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">Analysts were the bottleneck. So was compliance review.</h2>
-        <p>Enterprise-tier quotes averaged <strong>3.2 days</strong> to turn around, not because analysts were slow, but because every quote demanded reconciling unstructured vendor PDFs against a structured pricing matrix, then routing for compliance sign-off. Doubling throughput meant doubling headcount. Neither the unit economics nor the hiring pipeline supported that.</p>
-        <p>Leadership wanted "AI to fix this." The instinct most PMs would follow: ship a model that generates the quote end-to-end. In a GRC product, that instinct is <em>wrong</em>.</p>
+
+<div class="container v3-cs-body">
+  <aside class="v3-cs-side">
+    <div class="v3-cs-side-inner">
+      <div class="v3-cs-navcard">
+        <h4>On this page</h4>
+        <nav>
+          <a href="#problem">01 · The problem</a>
+          <a href="#approach">02 · Approach</a>
+          <a href="#results">03 · Results</a>
+          <a href="#decisions">04 · Decisions</a>
+          <a href="#role">05 · My role</a>
+          <a href="#lessons">06 · Lessons</a>
+        </nav>
       </div>
     </div>
-  </div>
-</section>
+  </aside>
 
-<!-- 02 DISCOVERY -->
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">02</span>Discovery</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">Shadowed 12 analysts. Read the SOPs. Asked what breaks.</h2>
-        <p>I spent two weeks embedded with the quote team across three offices. The pattern was consistent: analysts weren't slow on <em>decisions</em>, they were slow on <em>extraction</em>, manually pulling SKUs, pricing tiers, and contract terms out of 40-page PDFs so a human could apply judgment.</p>
-        <div class="v2-pullquote">"The AI doesn't need to price the quote. It needs to hand me a clean table so I can price it in two minutes instead of twenty."</div>
-        <p>That reframe changed the scope. We weren't automating pricing. We were automating <strong>data preparation</strong>, with the analyst still making the call and signing the quote.</p>
+  <div>
+    <article class="v3-chapter" id="problem">
+      <div class="v3-chapter-head"><span class="num">Chapter 01</span><span class="rule"></span><span class="cat">Problem space</span></div>
+      <h2 class="v3-h2">The expensive part of the job was becoming data entry.</h2>
+      <div class="v3-prose">
+        <p>Healthcare organizations buy equipment from suppliers like GE Healthcare, Philips, and Siemens, each pricing quotes differently. Before an analyst could apply any judgment, they had to retype every line into a structured format: PDFs, scans, spreadsheets and emails, in at least nine distinct layouts. Line items per quote were climbing every year, and the team preparing them was getting smaller.</p>
+        <p>Pricing analysts, about 10.5 FTE in 2026, own the final number the customer sees, so any tool had to leave them in control rather than replace their call.</p>
       </div>
+      <div class="v3-flow-container">
+  <div class="v3-flow-track">
+    <div class="v3-flow-node source">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+      <h5>Supplier Quotes</h5><p>9+ Layouts</p>
+    </div>
+    <div class="v3-flow-arrow"></div>
+    <div class="v3-flow-node ai">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5z"></path></svg></div>
+      <h5>LLM + Parsers</h5><p>Extraction</p>
+    </div>
+    <div class="v3-flow-arrow"></div>
+    <div class="v3-flow-node rules">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+      <h5>Business Rules</h5><p>Logic & Derivation</p>
+    </div>
+    <div class="v3-flow-arrow long"><span class="v3-flow-arrow-label">Computed or N/A</span></div>
+    <div class="v3-flow-node human">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg></div>
+      <h5>Analyst Review</h5><p>Verification</p>
+    </div>
+    <div class="v3-flow-arrow"></div>
+    <div class="v3-flow-node output">
+      <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="16" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
+      <h5>CSV Export</h5><p>Clean Line Items</p>
     </div>
   </div>
-</section>
+</div>
+      <div class="v3-triad">
+        <div class="v3-triad-card"><div class="ic"><svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="10" width="20" height="26" rx="3" stroke="var(--navy-800)" stroke-width="2"/><rect x="14" y="4" width="20" height="26" rx="3" stroke="var(--green-600)" stroke-width="2" fill="var(--white)"/><line x1="18" y1="12" x2="30" y2="12" stroke="var(--navy-800)" stroke-width="1.6" stroke-linecap="round"/><line x1="18" y1="17" x2="26" y2="17" stroke="var(--navy-800)" stroke-width="1.6" stroke-linecap="round"/></svg></div><h4>Nine layouts</h4><p class="v3-body-sm">No two suppliers price the same way. A fixed template breaks on the next vendor.</p></div>
+        <div class="v3-triad-card"><div class="ic"><svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="24" width="6" height="10" rx="1.5" stroke="var(--navy-800)" stroke-width="2"/><rect x="17" y="16" width="6" height="18" rx="1.5" stroke="var(--navy-800)" stroke-width="2"/><rect x="28" y="6" width="6" height="28" rx="1.5" stroke="var(--green-600)" stroke-width="2"/><path d="M6 12 L18 6 L34 3" stroke="var(--green-600)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Climbing complexity</h4><p class="v3-body-sm">Line items per quote rose 30.6% from 2024 to 2025, before the AI even shipped.</p></div>
+        <div class="v3-triad-card"><div class="ic"><svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="12" r="5" stroke="var(--navy-800)" stroke-width="2"/><path d="M5 30c0-6 4-10 9-10s9 4 9 10" stroke="var(--navy-800)" stroke-width="2" stroke-linecap="round"/><circle cx="29" cy="18" r="3.5" stroke="var(--green-600)" stroke-width="1.8"/><path d="M23 32c0-4.5 2.7-7.5 6-7.5s6 3 6 7.5" stroke="var(--green-600)" stroke-width="1.8" stroke-linecap="round"/></svg></div><h4>Shrinking team</h4><p class="v3-body-sm">Analyst capacity fell from 17.0 to 10.5 FTE across the same period.</p></div>
+      </div>
+    </article>
 
-<!-- 03 APPROACH -->
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">03</span>Approach</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">LLM + RAG for extraction. Humans for judgment.</h2>
-        <p>The architecture: a document-ingest pipeline parsed incoming PDFs, RAG retrieved the relevant pricing-matrix rows from our product catalog, and an LLM structured the extracted data into a validated table. The analyst saw the table pre-filled, with confidence scores, field-level provenance, and low-confidence rows flagged for manual review.</p>
-        <div class="v2-callout">
-          <strong>The non-negotiable constraint:</strong> every quote goes through human validation before it leaves the building. Compliance needed signatures, not model outputs. HITL wasn't a feature; it was the contract.
+    <article class="v3-chapter" id="approach">
+      <div class="v3-chapter-head"><span class="num">Chapter 02</span><span class="rule"></span><span class="cat">Architecture</span></div>
+      <h2 class="v3-h2">AI reads the document. Rules compute what can be derived. Everything else says so.</h2>
+      <div class="v3-prose">
+        <p>The analyst uploads a quote. The model reads document context, not fixed coordinates, and returns every line item: product, description, quantity, list price, quoted price. Where a price can be derived from what the supplier gave (<code>List = Net ÷ (1 − Discount)</code>), a deterministic rule computes it. Where a field genuinely can't be derived, it comes back as <strong>"N/A" instead of a guess</strong>. That's the rule I care about most: a blank cell gets checked; a wrong number that looks right gets shipped to a hospital.</p>
+        <p>The architecture stayed boring on purpose: one prompt, no agents, no retrieval, SQLite and lightweight auth. Claude runs on AWS Bedrock because quote data stays inside the company's own cloud account, which is what got this past security review.</p>
+        <p>This extraction engine is one slice of a larger legacy-modernization effort, Phoenix. It shipped first, standalone, because it proved the AI worked on real quotes before the platform rebuild absorbed it. <a href="./case-phoenix.html" style="color:var(--blue-600);font-weight:600;">More on Phoenix →</a></p>
+      </div>
+      <div class="v3-diff">
+        <div class="v3-diff-head"><span class="v3-label-sm">Legacy manual audit</span><span class="v3-muted">vs</span><span class="v3-label-sm" style="color:var(--green-700);">Grounded extraction (production)</span></div>
+        <div class="v3-diff-cols">
+          <div class="v3-diff-col before"><h4>Before</h4>
+            <div class="v3-diff-row">✕ Read every line of every quote by hand</div>
+            <div class="v3-diff-row">✕ Manually calculated List / Discount / Net Price</div>
+            <div class="v3-diff-row">✕ Errors surfaced downstream, not upstream</div>
+          </div>
+          <div class="v3-diff-col after"><h4>After</h4>
+            <div class="v3-diff-row">✓ Upload the PDF, nothing else</div>
+            <div class="v3-diff-row">✓ AI extracts, rules compute what's derivable, N/A flags the rest</div>
+            <div class="v3-diff-row">✓ Every extraction reviewed before it goes anywhere</div>
+          </div>
         </div>
-        <p>Engineering wanted to start with a fine-tuned model. I pushed back: we had zero labeled data and a 6-week pilot window. <strong>RAG first, fine-tune later</strong> if the baseline needed it. It didn't.</p>
-        <p>This extraction engine is one slice of a much larger legacy-modernization effort, <a href="./case-phoenix.html">Phoenix</a>. It shipped first, standalone, because it was the highest-leverage, lowest-risk piece of that program.</p>
       </div>
-    </div>
+    </article>
+
+    <article class="v3-chapter" id="results">
+      <div class="v3-chapter-head"><span class="num">Chapter 03</span><span class="rule"></span><span class="cat">Measured outcomes</span></div>
+      <h2 class="v3-h2">The honest read: quotes are moving, delivery time got worse.</h2>
+      <section data-screen-label="06 North Star & guardrail" style="background:#f8f9fa;padding:48px 0;" class="v3-reveal">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;">
+    <div style="text-transform:uppercase;letter-spacing:2.5px;font-size:12px;font-weight:600;color:var(--green-600);margin-bottom:14px;">How to read this honestly</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:24px;">
+          <div style="background:#fff;border:1px solid #e0e0e0;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:22px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;"><div><div style="font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--green-600);">North Star</div><h3 style="font-size:20px;font-weight:600;">Quotes per FTE per month</h3></div><span style="font-size:13px;font-weight:600;color:var(--green-600);background:#e0f9eb;border-radius:100px;padding:5px 12px;">↑ 11.7%</span></div>
+            <div style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);padding-top:8px;">
+              <div style="position:absolute;left:8px;right:calc(33.3% - 8px);top:15px;height:2px;background:linear-gradient(90deg,#e0e0e0,var(--green-600));"></div>
+              <div style="display:flex;flex-direction:column;gap:10px;position:relative;"><span style="width:16px;height:16px;border-radius:50%;background:#fff;border:2px solid #adb5bd;"></span><span style="font-size:24px;font-weight:700;color:#6c757d;line-height:1;">120.6</span><span style="font-size:12px;color:#6c757d;">2024</span></div>
+              <div style="display:flex;flex-direction:column;gap:10px;position:relative;"><span style="width:16px;height:16px;border-radius:50%;background:#fff;border:2px solid #6c757d;"></span><span style="font-size:24px;font-weight:700;color:#495057;line-height:1;">131.6</span><span style="font-size:12px;color:#6c757d;">2025</span></div>
+              <div style="display:flex;flex-direction:column;gap:10px;position:relative;"><span style="width:16px;height:16px;border-radius:50%;background:var(--green-600);border:2px solid var(--green-600);box-shadow:0 0 0 5px #e0f9eb;"></span><span style="font-size:24px;font-weight:700;color:var(--navy-800);line-height:1;">147.0</span><span style="font-size:12px;color:#6c757d;">2026 YTD Aug</span></div>
+            </div>
+            <div style="display:flex;gap:28px;padding-top:18px;border-top:1px solid #e0e0e0;"><div><div style="font-size:22px;font-weight:700;color:var(--navy-800);">9.02</div><div style="font-size:11.5px;color:#6c757d;text-transform:uppercase;letter-spacing:.4px;">Line items / quote</div></div><div><div style="font-size:22px;font-weight:700;color:var(--navy-800);">35.5m</div><div style="font-size:11.5px;color:#6c757d;text-transform:uppercase;letter-spacing:.4px;">Handling time, flat</div></div></div>
+            <p style="font-size:14px;font-weight:300;color:#495057;line-height:1.7;"><strong style="font-weight:600;color:#212529;">Read honestly:</strong> complexity and productivity were already rising before the AI. The 2026 gain is associated with it, not proven to be caused by it.</p>
+          </div>
+          <div style="background:#fff;border:1px solid #e0e0e0;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:22px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;"><div><div style="font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#6c757d;">Capacity</div><h3 style="font-size:20px;font-weight:600;">Analyst FTE</h3></div><span style="font-size:13px;font-weight:600;color:#495057;background:#f8f9fa;border-radius:100px;padding:5px 12px;">↓ 20.8%</span></div>
+            <div style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);padding-top:8px;">
+              <div style="position:absolute;left:8px;right:calc(33.3% - 8px);top:15px;height:2px;background:#adb5bd;"></div>
+              <div style="display:flex;flex-direction:column;gap:10px;position:relative;"><span style="width:16px;height:16px;border-radius:50%;background:#fff;border:2px solid #adb5bd;"></span><span style="font-size:24px;font-weight:700;color:#495057;line-height:1;">17.0</span><span style="font-size:12px;color:#6c757d;">2024</span></div>
+              <div style="display:flex;flex-direction:column;gap:10px;position:relative;"><span style="width:16px;height:16px;border-radius:50%;background:#fff;border:2px solid #adb5bd;"></span><span style="font-size:24px;font-weight:700;color:#495057;line-height:1;">13.25</span><span style="font-size:12px;color:#6c757d;">2025 weighted</span></div>
+              <div style="display:flex;flex-direction:column;gap:10px;position:relative;"><span style="width:16px;height:16px;border-radius:50%;background:#212529;border:2px solid #212529;"></span><span style="font-size:24px;font-weight:700;color:#212529;line-height:1;">10.5</span><span style="font-size:12px;color:#6c757d;">2026</span></div>
+            </div>
+            <div style="background:#fdeceb;border-radius:12px;padding:18px 20px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;"><div><div style="font-size:30px;font-weight:700;color:#c43b3b;line-height:1;">3.45d</div><div style="font-size:11px;font-weight:600;color:#7a2119;text-transform:uppercase;letter-spacing:.6px;margin-top:4px;">Delivery ↑ 8.5%</div></div><p style="font-size:13.5px;font-weight:300;color:#7a2119;line-height:1.6;">Rose in the same period the tool went live. Whether it returns to 2025 levels is the next thing to measure.</p></div>
+          </div>
+        </div>
   </div>
 </section>
+</article>
 
-<!-- 04 SHIFT -->
-<section class="v2-cs-section">
+    <article class="v3-chapter" id="decisions">
+      <div class="v3-chapter-head"><span class="num">Chapter 04</span><span class="rule"></span><span class="cat">Decisions &amp; tradeoffs</span></div>
+      <h2 class="v3-h2">Five calls that shaped the build.</h2>
+      <div class="v3-steps">
+        <div class="v3-step"><div class="v3-step-badge">01</div><div class="v3-step-body"><h4>Why AI, not templates</h4><p class="v3-body-sm">The hard part is judgment: is this row a bundle or a sub-line? Encoded as a 7-step fallback chain for list price, an 8-step chain for quoted price.</p></div></div>
+        <div class="v3-step"><div class="v3-step-badge hitl">02</div><div class="v3-step-body"><h4>Why rules compute what they can, nothing else guesses</h4><p class="v3-body-sm">Derivable prices get a formula. Truly unknown fields get N/A, never a plausible-looking number a hospital would pay against.</p></div><span class="v3-step-tag hitl">Guardrail</span></div>
+        <div class="v3-step"><div class="v3-step-badge">03</div><div class="v3-step-body"><h4>Why CSV first, not platform write-back</h4><p class="v3-body-sm">Write-back meant months of dependency on another team's roadmap. A CSV analysts import themselves shipped in one quarter.</p></div></div>
+        <div class="v3-step"><div class="v3-step-badge hitl">04</div><div class="v3-step-body"><h4>Why humans stayed in the loop</h4><p class="v3-body-sm">The analyst reviews every extraction before it goes anywhere. Latency 5–45 sec/quote, est. cost $0.03–$0.06/quote.</p></div><span class="v3-step-tag hitl">HITL</span></div>
+        <div class="v3-step"><div class="v3-step-badge">05</div><div class="v3-step-body"><h4>Why a phased rollout</h4><p class="v3-body-sm">WSJF-prioritized against 5 competing initiatives: ship normalization first, let usage tell us what Phase 2 needed.</p></div></div>
+      </div>
+    </article>
+
+    <article class="v3-chapter" id="role">
+      <div class="v3-chapter-head"><span class="num">Chapter 05</span><span class="rule"></span><span class="cat">My role</span></div>
+      <h2 class="v3-h2">What I owned as Product Owner.</h2>
+      <div class="v3-guard-grid">
+        <div class="v3-guard-card"><h4>Discovery &amp; Validation</h4><p class="v3-body-sm">I personally shadowed analysts during quote prep and mapped the exact preprocessing gaps. When engineering pushed for a full UI integration, I made the call to ship a standalone CSV pipeline first to de-risk adoption.</p></div>
+        <div class="v3-guard-card"><h4>Strategy &amp; roadmap</h4><p class="v3-body-sm">I defined the phased roadmap and presented the WSJF framework that got this funded over 5 competing initiatives. I authored every pricing and quantity business rule that governed the fallback logic.</p></div>
+        <div class="v3-guard-card"><h4>Execution &amp; delivery</h4><p class="v3-body-sm">I wrote the user stories, managed the backlog, and built the tool myself on Claude via AWS Bedrock, working directly with the pricing desk. I personally ran the final UAT validation that proved our 99.9% accuracy metric.</p></div>
+      </div>
+    </article>
+
+    <article class="v3-chapter" id="lessons">
+      <div class="v3-chapter-head"><span class="num">Chapter 06</span><span class="rule"></span><span class="cat">Lessons</span></div>
+      <h2 class="v3-h2">What this taught me about shipping AI products.</h2>
+      <div class="v3-prose">
+        <p><strong>Solve the right problem.</strong> The bottleneck wasn't document extraction. It was everything analysts did before benchmarking could even start.</p>
+        <p><strong>Build the labeled test set on day one.</strong> I know the tool works because analysts say so and the scorecard moved, but I can't prove extraction accuracy with a number. Phoenix fixed this with an evaluation harness.</p>
+        <p><strong>The best metric was analyst-reported.</strong> "I can breathe now," from one of the leads, mattered more than the throughput number.</p>
+      </div>
+      <div class="v3-pullquote-card">
+        <div class="eyebrow">✦ Next</div>
+        <blockquote>Benchmarking automation, then report generation, then an integrated workflow with human review at each step.</blockquote>
+      </div>
+    </article>
+
+    <a class="v3-next-teaser v3-mt-lg" href="./case-compliance-content-ai.html">
+      <div><span class="v3-eyebrow" style="color:var(--outline);">Next case</span><h3 class="v3-h3">Regulatory Content Engine</h3><p class="v3-body-sm">Automating legal tracking with hashed HTML snapshots and Claude.</p></div>
+      <div class="arrow">&rarr;</div>
+    </a>
+  </div>
+</div>
+
+<section class="v3-section v3-section-alt" id="workbench">
   <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">04</span>The shift</div>
-      <div>
-        <h2 class="v2-cs-h">Before → after, in the only unit that matters.</h2>
-        <div class="v2-diff">
-          <div class="v2-diff-row minus"><span class="sign">−</span><span>3.2 days avg turnaround</span><span class="tag">before</span></div>
-          <div class="v2-diff-row plus"><span class="sign">+</span><span>1.5–2 days avg turnaround</span><span class="tag">after · 6 wks</span></div>
-          <div style="height:16px;"></div>
-          <div class="v2-diff-row minus"><span class="sign">−</span><span>30–40 min extraction / quote</span><span class="tag">before</span></div>
-          <div class="v2-diff-row plus"><span class="sign">+</span><span>&lt;1 min extraction / quote</span><span class="tag">after</span></div>
-          <div style="height:16px;"></div>
-          <div class="v2-diff-row minus"><span class="sign">−</span><span>Manual line-item entry</span><span class="tag">before</span></div>
-          <div class="v2-diff-row plus"><span class="sign">+</span><span>~99.9% accurate, human-reviewed</span><span class="tag">after</span></div>
+    <div class="v3-section-head">
+      <span class="v3-eyebrow"><span class="dot"></span>Interactive walkthrough</span>
+      <h2 class="v3-h2">Quote extraction, step by step.</h2>
+      <p class="v3-body v3-section-sub v3-muted">Illustrative recreation with a synthetic sample quote, not real employer data, since the production system runs on employer infrastructure. The pattern (extract, compute what's derivable, flag what isn't, human review) is the real architecture.</p>
+    </div>
+    <div class="v3-bench">
+      <div class="v3-bench-steps">
+        <button class="v3-bench-step-btn active">
+          <span class="v3-bench-step-icon"><span class="v3-bench-step-badge">1</span><svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 26V8M13 15l7-7 7 7" stroke="var(--navy-800)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 26v4a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4v-4" stroke="var(--green-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="k">Step 01</span><span class="t">Upload quote</span>
+        </button>
+        <button class="v3-bench-step-btn">
+          <span class="v3-bench-step-icon"><span class="v3-bench-step-badge">2</span><svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="5" width="20" height="26" rx="2" stroke="var(--navy-800)" stroke-width="2"/><line x1="12" y1="12" x2="24" y2="12" stroke="var(--navy-800)" stroke-width="1.4" stroke-linecap="round"/><line x1="12" y1="17" x2="20" y2="17" stroke="var(--navy-800)" stroke-width="1.4" stroke-linecap="round"/><circle cx="26" cy="26" r="7" stroke="var(--green-600)" stroke-width="2"/><line x1="31" y1="31" x2="35" y2="35" stroke="var(--green-600)" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+          <span class="k">Step 02</span><span class="t">AI extraction</span>
+        </button>
+        <button class="v3-bench-step-btn">
+          <span class="v3-bench-step-icon"><span class="v3-bench-step-badge">3</span><svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="7" y="5" width="26" height="30" rx="2" stroke="var(--navy-800)" stroke-width="2"/><path d="M13 14l2.5 2.5L20 11" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="24" y1="14" x2="28" y2="14" stroke="var(--navy-800)" stroke-width="1.6" stroke-linecap="round"/><path d="M13 23l2.5 2.5L20 20" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="24" y1="23" x2="28" y2="23" stroke="var(--navy-800)" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <span class="k">Step 03</span><span class="t">Rules + N/A</span>
+        </button>
+        <button class="v3-bench-step-btn">
+          <span class="v3-bench-step-icon"><span class="v3-bench-step-badge">4</span><svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="12" r="6" stroke="var(--navy-800)" stroke-width="2"/><path d="M7 33c0-7 5-11 11-11s11 4 11 11" stroke="var(--navy-800)" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="28" r="7" fill="var(--white)" stroke="var(--green-600)" stroke-width="2"/><path d="M27 28l2 2 4-4.5" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="k">Step 04</span><span class="t">Analyst review</span>
+        </button>
+      </div>
+      <div class="v3-bench-grid">
+        <div>
+          <div class="v3-bench-file">
+            <div><div class="name">sample_supplier_quote_synthetic.pdf</div><div class="meta">Illustrative sample · not a real quote</div></div>
+            <span class="v3-pill v3-pill-neutral" id="v3-bench-badge">01 · Ingestion</span>
+          </div>
+          <div class="v3-bench-body" id="v3-bench-body"></div>
+        </div>
+        <div class="v3-bench-side">
+          <span class="v3-eyebrow" style="color:var(--green-tint);">Guardrail telemetry</span>
+          <div class="v3-bench-bar-row"><div class="top"><span>N/A over guess, held</span><span class="v">100%</span></div><div class="v3-bench-bar-track"><div class="v3-bench-bar-fill" style="width:100%;"></div></div></div>
+          <div class="v3-bench-bar-row"><div class="top"><span>Human review before ship</span><span class="v">100%</span></div><div class="v3-bench-bar-track"><div class="v3-bench-bar-fill" style="width:100%;"></div></div></div>
+          <div class="v3-bench-log" id="v3-bench-log"></div>
+          <button class="v3-bench-next" id="v3-bench-next">Advance to next step →</button>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 05 ROLE -->
-<section class="v2-cs-section">
+<section class="v3-cta-band">
   <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">05</span>My role</div>
-      <div>
-        <h2 class="v2-cs-h">What I owned on this build.</h2>
-        <div class="v2-role-list">
-          <div class="v2-role-item"><div class="k">Discovery</div><div>12 analyst shadowing sessions, SOP audit, workflow mapping with ops lead.</div></div>
-          <div class="v2-role-item"><div class="k">Scoping</div><div>Reframed ambiguous "AI automation" ask into extraction-first HITL architecture. Wrote the PRD.</div></div>
-          <div class="v2-role-item"><div class="k">Prioritization</div><div>WSJF against 5 competing initiatives; pitched and defended sequencing to leadership.</div></div>
-          <div class="v2-role-item"><div class="k">Delivery</div><div>Cross-functional execution with eng, QA, CS, compliance on shared OKRs; weekly SLA triage process.</div></div>
-          <div class="v2-role-item"><div class="k">Measurement</div><div>Pendo funnel telemetry + analyst throughput instrumentation. Weekly review cadence.</div></div>
-        </div>
+    <div class="v3-cta-card">
+      <div><h2 class="v3-h2">Let's build what <em style="color:var(--green-tint);font-style:normal;">actually ships</em>.</h2></div>
+      <div class="v3-cta-actions">
+        <a href="mailto:krishnashemanth@gmail.com" class="v3-btn v3-btn-primary">krishnashemanth@gmail.com</a>
+        <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="v3-btn v3-btn-outline-light">LinkedIn →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 06 LESSONS -->
-<section class="v2-cs-section" style="border-bottom:none;">
+<footer class="v3-footer">
   <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">06</span>Lessons</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">Three things I'd tell the next PM on this project.</h2>
-        <p><strong>The obvious AI build is usually wrong.</strong> End-to-end automation demos well. In a compliance-bound domain, it fails adoption. Find the unglamorous middle of the workflow and automate that.</p>
-        <p><strong>Confidence scores are a UX decision, not a model one.</strong> What threshold flags a row for review? Who owns overrides? How do analysts report a model mistake? Those were PRD questions, not eng questions.</p>
-        <p><strong>The best metric was analyst-reported.</strong> "I can breathe now" from one of the leads mattered more than the throughput number. Culture-of-adoption is the leading indicator; throughput is the lag.</p>
-      </div>
+    <div class="v3-footer-grid">
+      <div class="v3-footer-brand"><a href="./index.html" class="v3-brand" style="margin-bottom:14px;"><span class="dot"></span><span class="v3-brand-text"><span class="name">KrishnaS Hemanth</span></span></a><p>Product Owner building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p></div>
+      <div class="v3-footer-col"><h4>Work</h4><a href="./selected-work.html">All case studies</a><a href="./case-quote-automation.html">Quote Automation</a><a href="./expertise.html">Expertise</a></div>
+      <div class="v3-footer-col"><h4>Deep dives</h4><a href="./about.html">About &amp; Timeline</a><a href="./about.html#principles">Principles</a><a href="./resume.html">Resume</a></div>
+      <div class="v3-footer-col wide"><h4>Connect</h4><a href="mailto:krishnashemanth@gmail.com">Email</a><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
-  </div>
-</section>
-
-<!-- NEXT -->
-<section class="v2-next">
-  <div class="container">
-    <div class="v2-next-row">
-      <a href="./case-radiology-ai.html" class="big">Next case · Clinical Radiology AI <span>→</span></a>
-      <a href="./index.html#work" style="font-size:13.5px;color:var(--gray);">← All work</a>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="v2-cta">
-  <div class="container">
-    <h2>Let's build what <em>actually ships</em>.</h2>
-    <div class="row">
-      <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">krishnashemanth@gmail.com</a>
-      <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn →</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="v2-footer">
-  <div class="container">
-    <div class="v2-footer-grid">
-      <div>
-        <a href="./index.html" class="v2-brand" style="margin-bottom:18px;display:inline-flex;">KrishnaS Hemanth<span class="dot">.</span></a>
-        <p class="blurb">Product Manager building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p>
-      </div>
-      <div>
-        <h4>Work</h4>
-        <ul>
-          <li><a href="./case-quote-automation.html">AI Quote Automation</a></li>
-          <li><a href="./index.html#work">All case studies</a></li>
-          <li><a href="./about.html#principles">Principles</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="mailto:krishnashemanth@gmail.com">Email</a></li>
-          <li><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="v2-footer-bottom">
-      <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
-    </div>
+    <div class="v3-footer-bottom"><span>© <span id="v3-year">2026</span> Krishnasai Hemanth Randhi</span></div>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script>
-(function(){
-  var EMAIL = 'krishnashemanth@gmail.com';
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.setAttribute('title', 'Copy email ID');
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      var restore = a.innerHTML;
-      function done(){ a.innerHTML = 'Email copied ✓'; setTimeout(function(){ a.innerHTML = restore; }, 1500); }
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(EMAIL).then(done, function(){ window.location.href = 'mailto:' + EMAIL; });
-      } else { window.location.href = 'mailto:' + EMAIL; }
-    });
-  });
-})();
+window.V3_BENCH_STEPS = [
+  { badge: "01 · Ingestion", log: "[01] Quote received: PDF, 3 pages. Text extraction started.",
+    html: '<div class="v3-bench-mini"><div><span>Format</span><b>PDF</b></div><div><span>Pages</span><b>3</b></div><div><span>Layout</span><b>Layout 4 of 9</b></div></div><p class="v3-body-sm v3-muted">The analyst uploads a quote. Text extraction runs before the model reads document context, not fixed coordinates.</p>' },
+  { badge: "02 · AI extraction", log: "[02] Claude read 6 line items. Bundle + sub-line structure detected.",
+    html: '<div class="v3-bench-mini"><div><span>Line items</span><b>6</b></div><div><span>Bundles found</span><b>1</b></div><div><span>Latency</span><b>~18s</b></div></div><p class="v3-body-sm v3-muted">The model returns product, description, quantity, list price and quoted price for every row it can read.</p>' },
+  { badge: "03 · Rules + N/A", log: "[03] List price derived via formula on 5/6 rows. 1 field flagged N/A.",
+    html: '<div class="v3-bench-mini"><div><span>Derived by rule</span><b>5 rows</b></div><div><span>Flagged N/A</span><b>1 field</b></div><div><span>Guess made</span><b>0</b></div></div><p class="v3-body-sm v3-muted">Where a price is derivable (List = Net ÷ (1 − Discount)), a deterministic rule computes it. Where it truly can\'t be derived, it comes back "N/A" instead of a guess.</p>' },
+  { badge: "04 · Analyst review", log: "[04] Analyst approved 6/6 rows. Exported to CSV.",
+    html: '<div class="v3-bench-mini"><div><span>Rows approved</span><b>6/6</b></div><div><span>Est. cost</span><b>$0.04</b></div><div><span>Error rate</span><b>~1/1,000</b></div></div><p class="v3-body-sm v3-muted">Every extraction is reviewed before it goes anywhere. Nothing ships unreviewed.</p>' }
+];
 </script>
-<script data-goatcounter="https://krishnas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="./script.js"></script>
+
 </body>
 </html>

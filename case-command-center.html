@@ -6,214 +6,173 @@
 <title>Command Center · Personal PM Workspace · Case Study | KrishnaS Hemanth</title>
 <meta name="description" content="Case study: a single-file, offline-first productivity tool built to run a multi-product portfolio without the approval overhead of adopting a new SaaS tool." />
 <link rel="icon" type="image/png" href="./assets/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://krishnashemanth.github.io/case-command-center.html">
-<meta property="og:title" content="Command Center · Personal PM Workspace · Case Study | KrishnaS Hemanth">
-<meta property="og:description" content="Case study: a single-file, offline-first productivity tool built to run a multi-product portfolio without the approval overhead of adopting a new SaaS tool.">
-<meta property="og:image" content="https://krishnashemanth.github.io/assets/og.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Command Center · Personal PM Workspace · Case Study | KrishnaS Hemanth">
-<meta name="twitter:description" content="Case study: a single-file, offline-first productivity tool built to run a multi-product portfolio without the approval overhead of adopting a new SaaS tool.">
-<meta name="twitter:image" content="https://krishnashemanth.github.io/assets/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
-<script defer src="./nav-scroll.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css?v=3">
 </head>
 <body>
 
-<nav class="v2-nav">
-  <div class="v2-nav-inner">
-    <a href="./index.html" class="v2-brand">KrishnaS Hemanth<span class="dot">.</span> <small>PM · AI · Regulated SaaS</small></a>
-    <div class="v2-links">
-      <a href="./index.html#work" class="active">Work</a>
-      <a href="./index.html#expertise">Expertise</a>
-      <a href="./about.html">About</a>
-      <a href="./resume.html">Resume</a>
-    </div>
-    <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">Let's talk</a>
-    <button class="v2-hamburger" aria-label="Menu" onclick="this.closest('.v2-nav').classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+<nav class="v3-nav">
+  <div class="v3-nav-inner">
+    <a href="./index.html" class="v3-brand"><span class="dot"></span><span class="v3-brand-text"><span class="name">KrishnaS Hemanth</span><span class="tag">PO · AI · Regulated SaaS</span></span></a>
+    <div class="v3-links"><a href="./index.html">Home</a><a href="./selected-work.html" class="active">Work</a><a href="./expertise.html">Expertise</a><a href="./about.html">About &amp; Timeline</a><a href="./resume.html">Resume</a></div>
+    <div class="v3-nav-cta"><a href="mailto:krishnashemanth@gmail.com" class="v3-btn v3-btn-primary">Get in touch</a></div>
+    <button class="v3-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
+  <div class="v3-mobile-menu"><a href="./index.html">Home</a><a href="./selected-work.html" class="active">Work</a><a href="./expertise.html">Expertise</a><a href="./about.html">About &amp; Timeline</a><a href="./resume.html">Resume</a><a href="mailto:krishnashemanth@gmail.com">Get in touch</a></div>
 </nav>
 
-<header class="v2-cs-hero">
+<header class="v3-cs-hero">
   <div class="container">
-    <p class="v2-breadcrumb"><a href="./index.html#work">← All work</a> &nbsp;·&nbsp; Case 08 of 09 · Personal build</p>
-    <div class="v2-meta-chips">
-      <span>Personal build</span><span>Internal Productivity Tool</span><span>Solo · Product + Eng</span><span>2026 · In daily use</span>
+    <p class="v3-breadcrumb"><a href="./selected-work.html">← All work</a> &nbsp;·&nbsp; Case 08 of 08 · Personal build</p>
+    <div class="v3-cs-head-grid">
+      <div>
+        <h1 class="v3-h1">The to-do tool I built because <em style="font-style:normal;color:var(--blue-600);">ADO isn't for one person's Tuesday</em>.</h1>
+        <p class="v3-body-lg v3-muted" style="margin-top:12px;max-width:640px;">A single-file, offline-first workspace that unifies tasks, follow-ups, and links across a multi-product portfolio, built because no enterprise tool treats "who am I waiting on" as a first-class thing.</p>
+      </div>
+      <div class="v3-cs-meta-card">
+        <span class="v3-label-sm v3-muted">Context</span>
+        <div class="tags"><span class="v3-tag">Personal build</span><span class="v3-tag">Internal Productivity Tool</span><span class="v3-tag">Solo · Product + Eng</span><span class="v3-tag">2026 · In daily use</span></div>
+      </div>
     </div>
-    <h1>The to-do tool I built because <em>ADO isn't for one person's Tuesday</em>.</h1>
-    <p class="v2-cs-dek">
-      A single-file, offline-first workspace that unifies tasks, follow-ups, and links across a multi-product portfolio, built because no enterprise tool treats "who am I waiting on" as a first-class thing.
-    </p>
-  </div>
+    </div>
 </header>
 
-<section class="v2-impact">
+<section data-screen-label="05 Impact strip" style="background:#fff;padding:32px 0;" class="v3-reveal">
   <div class="container">
-    <div class="v2-impact-grid" style="grid-template-columns:repeat(4,1fr);">
-      <div><div class="num">&lt;5 sec</div><div class="lbl">To capture a task<br />was ~20 sec (est.)</div></div>
-      <div><div class="num">0</div><div class="lbl">Approvals or infra needed<br />zero backend, browser-only</div></div>
-      <div><div class="num">~10 min</div><div class="lbl">Daily overhead recovered<br />self-reported estimate</div></div>
-      <div><div class="num">0</div><div class="lbl">Dependencies<br />vanilla JS, no build step</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">01</span>The problem</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">Four products, four boards, no single place to think.</h2>
-        <p>Running a multi-product portfolio means a different work-item board, doc space, and stakeholder cast for every product. None of it aggregates at the personal level. Capturing a quick "follow up with someone about this Thursday" meant either a heavyweight work-item ticket or a sticky note that would be gone by Friday.</p>
+    <div style="text-transform:uppercase;letter-spacing:2.5px;font-size:12px;font-weight:600;color:var(--green-600);margin-bottom:14px;">Impact · Command Center</div>
+    <div class="impact-strip-grid">
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">&lt;5 sec</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">To capture a task</div>
+        <div style="font-size:13px;font-weight:300;color:#6c757d;">Was ~20 sec</div>
+      </div>
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">0</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Approvals or infra needed</div>
+        <div style="font-size:13px;font-weight:300;color:#6c757d;">Zero backend, browser-only</div>
+      </div>
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">~10 min</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Daily overhead recovered</div>
+        <div style="font-size:13px;font-weight:300;color:#6c757d;">Self-reported estimate</div>
+      </div>
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">0</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Dependencies</div>
+        <div style="font-size:13px;font-weight:300;color:#6c757d;">Vanilla JS, no build step</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">02</span>Discovery</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">"Waiting on someone" is a different job than "I owe this."</h2>
-        <p>Two weeks of structured self-observation (logging every time I reached for a tool and what I actually wanted from it) surfaced the clearest finding: follow-up work has a distinct mental model from task work. It needs an owner and a source, and it needs its own review cadence. No tool at the personal level modeled that; it was always an afterthought bolted onto a generic to-do.</p>
-        <div class="v2-pullquote">"Capture friction is the whole ballgame. If the tool of record demands too many fields, the thought just doesn't get captured."</div>
+<div class="container v3-cs-body">
+  <aside class="v3-cs-side">
+    <div class="v3-cs-side-inner">
+      <div class="v3-cs-navcard">
+        <h4>On this page</h4>
+        <nav>
+          <a href="#problem">01 · The problem</a>
+          <a href="#discovery">02 · Discovery</a>
+          <a href="#approach">03 · Approach</a>
+          <a href="#outcome">04 · Outcome</a>
+          <a href="#role">05 · My role</a>
+          <a href="#lessons">06 · Lessons</a>
+        </nav>
       </div>
     </div>
-  </div>
-</section>
+  </aside>
 
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">03</span>Approach</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">The boring, approval-free path was the one that would ship.</h2>
-        <p>I made follow-ups a first-class type, with an owner, a source, and its own board, rather than a tag bolted onto a task. And I built the whole thing as a single-file, offline, browser-storage app with zero backend, specifically so it needed no security review, no hosting, and no approval to start using immediately on a locked-down work laptop.</p>
-        <div class="v2-callout">
-          <strong>The trade-off, stated honestly:</strong> no cross-device sync, a hard storage ceiling, and no framework, in exchange for a tool that got used starting day one instead of never shipping at all.
+  <div>
+    <article class="v3-chapter" id="problem">
+      <div class="v3-chapter-head"><span class="num">Chapter 01</span><span class="rule"></span><span class="cat">Problem space</span></div>
+      <h2 class="v3-h2">Four products, four boards, no single place to think.</h2>
+      <div class="v3-prose">
+        <p>Running a multi-product portfolio means a different work-item board, doc space, and stakeholder cast for every product. None of it aggregates at the personal level. Follow-ups mostly lived in email flags and memory instead, and some went stale. I also had about 70 bookmarks I'd stopped using.</p>
+      </div>
+    </article>
+
+    <article class="v3-chapter" id="discovery">
+      <div class="v3-chapter-head"><span class="num">Chapter 02</span><span class="rule"></span><span class="cat">Discovery</span></div>
+      <h2 class="v3-h2">"Waiting on someone" is a different job than "I owe this."</h2>
+      <div class="v3-prose">
+        <p>Two weeks of structured self-observation surfaced the clearest finding: follow-up work has a distinct mental model from task work. It needs an owner and a source, and its own review cadence. No tool at the personal level modeled that.</p>
+      </div>
+      <div class="v3-pullquote-card">
+        <div class="eyebrow">✦ On capture friction</div>
+        <blockquote>"Capture friction is the whole ballgame. If the tool of record demands too many fields, the thought just doesn't get captured."</blockquote>
+      </div>
+    </article>
+
+    <article class="v3-chapter" id="approach">
+      <div class="v3-chapter-head"><span class="num">Chapter 03</span><span class="rule"></span><span class="cat">Approach</span></div>
+      <h2 class="v3-h2">The boring, approval-free path was the one that would ship.</h2>
+      <div class="v3-prose">
+        <p>I made follow-ups a first-class type, with an owner, a source, and its own board, rather than a tag bolted onto a task. And I built the whole thing as a single-file, offline, browser-storage app with zero backend, specifically so it needed no security review, no hosting, and no approval to start using immediately.</p>
+      </div>
+      <div class="v3-honest-box">
+        <p><strong>The trade-off, stated honestly:</strong> no cross-device sync, a hard storage ceiling, and no framework, in exchange for a tool that got used starting day one instead of never shipping at all.</p>
+      </div>
+    </article>
+
+    <article class="v3-chapter" id="outcome">
+      <div class="v3-chapter-head"><span class="num">Chapter 04</span><span class="rule"></span><span class="cat">Outcome</span></div>
+      <h2 class="v3-h2">Replaced the bookmark bar and the sticky notes outright.</h2>
+      <section data-screen-label="07 Before vs after" style="background:#fff;padding:48px 0;" class="v3-reveal">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="text-transform:uppercase;letter-spacing:2.5px;font-size:12px;font-weight:600;color:var(--green-600);margin-bottom:14px;">Command Center</div>
+    <h2 style="font-size:clamp(28px,3.4vw,40px);font-weight:600;line-height:1.2;letter-spacing:-.6px;max-width:760px;margin-bottom:40px;">Before <span style="color:#6c757d;font-weight:300;">vs</span> <span style="color:var(--navy-800);">after</span></h2>
+        <div style="background:#fff;border:1px solid #e0e0e0;padding:8px clamp(20px,4vw,40px);border-radius:16px;">
+          <div style="display:grid;grid-template-columns:minmax(110px,200px) minmax(0,1fr) 28px minmax(0,1fr);gap:20px;align-items:center;padding:24px 0;border-bottom:1px solid #e0e0e0;"><span style="font-size:12px;font-weight:600;letter-spacing:1.3px;text-transform:uppercase;color:#6c757d;">Capture a task</span><div><div style="font-size:30px;font-weight:700;color:#adb5bd;line-height:1;">~20 sec</div><div style="font-size:13px;font-weight:300;color:#6c757d;margin-top:4px;">Estimated</div></div><span style="font-size:22px;color:var(--green-600);">→</span><div><div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;">&lt;5 sec</div><div style="font-size:13px;font-weight:300;color:#495057;margin-top:4px;">Natural-language quick-add</div></div></div>
+          <div style="display:grid;grid-template-columns:minmax(110px,200px) minmax(0,1fr) 28px minmax(0,1fr);gap:20px;align-items:center;padding:24px 0;border-bottom:1px solid #e0e0e0;"><span style="font-size:12px;font-weight:600;letter-spacing:1.3px;text-transform:uppercase;color:#6c757d;">Check my status</span><div><div style="font-size:30px;font-weight:700;color:#adb5bd;line-height:1;">5 tools</div><div style="font-size:13px;font-weight:300;color:#6c757d;margin-top:4px;">Switching between apps</div></div><span style="font-size:22px;color:var(--green-600);">→</span><div><div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;">1 dashboard</div><div style="font-size:13px;font-weight:300;color:#495057;margin-top:4px;">One view</div></div></div>
+          <div style="display:grid;grid-template-columns:minmax(110px,200px) minmax(0,1fr) 28px minmax(0,1fr);gap:20px;align-items:center;padding:24px 0;"><span style="font-size:12px;font-weight:600;letter-spacing:1.3px;text-transform:uppercase;color:#6c757d;">Stale follow-ups / mo</span><div><div style="font-size:30px;font-weight:700;color:#adb5bd;line-height:1;">3–5</div><div style="font-size:13px;font-weight:300;color:#6c757d;margin-top:4px;">Estimated</div></div><span style="font-size:22px;color:var(--green-600);">→</span><div><div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;">0–1</div><div style="font-size:13px;font-weight:300;color:#495057;margin-top:4px;">Estimated</div></div></div>
         </div>
+  </div>
+</section>
+</article>
+
+    <article class="v3-chapter" id="lessons">
+      <div class="v3-chapter-head"><span class="num">Chapter 06</span><span class="rule"></span><span class="cat">Lessons</span></div>
+      <h2 class="v3-h2">Constraints are a design input, not an obstacle.</h2>
+      <div class="v3-prose">
+        <p><strong>The cheapest tool that ships beats the ideal tool that doesn't.</strong> Zero-approval, zero-infra architecture was the actual reason this exists in daily use.</p>
+        <p><strong>Model the user's mental model, not the domain's vocabulary.</strong> "Blocker" and "dependency" felt like statuses but were really reasons.</p>
+        <p><strong>Watch your own behavior for a week before designing the data model.</strong> A proper browser database from day one would have avoided the storage ceiling.</p>
+      </div>
+    </article>
+
+    <a class="v3-next-teaser v3-mt-lg" href="./case-quote-automation.html">
+      <div><span class="v3-eyebrow" style="color:var(--outline);">Next case</span><h3 class="v3-h3">Quote Automation</h3><p class="v3-body-sm">Parsing supplier PDFs with LLMs and business rules.</p></div>
+      <div class="arrow">&rarr;</div>
+    </a>
+  </div>
+</div>
+
+<section class="v3-cta-band">
+  <div class="container">
+    <div class="v3-cta-card">
+      <div><h2 class="v3-h2">Let's build what <em style="color:var(--green-tint);font-style:normal;">actually ships</em>.</h2></div>
+      <div class="v3-cta-actions">
+        <a href="mailto:krishnashemanth@gmail.com" class="v3-btn v3-btn-primary">krishnashemanth@gmail.com</a>
+        <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="v3-btn v3-btn-outline-light">LinkedIn →</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="v2-cs-section">
+<footer class="v3-footer">
   <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">04</span>Outcome</div>
-      <div>
-        <h2 class="v2-cs-h">Replaced the bookmark bar and the sticky notes outright.</h2>
-        <div class="v2-diff">
-          <div class="v2-diff-row minus"><span class="sign">−</span><span>~20 sec to capture a task</span><span class="tag">before (est.)</span></div>
-          <div class="v2-diff-row plus"><span class="sign">+</span><span>&lt;5 sec, natural-language quick-add</span><span class="tag">after (est.)</span></div>
-          <div style="height:16px;"></div>
-          <div class="v2-diff-row minus"><span class="sign">−</span><span>5 tools to check "my status"</span><span class="tag">before</span></div>
-          <div class="v2-diff-row plus"><span class="sign">+</span><span>1 dashboard</span><span class="tag">after</span></div>
-        </div>
-      </div>
+    <div class="v3-footer-grid">
+      <div class="v3-footer-brand"><a href="./index.html" class="v3-brand" style="margin-bottom:14px;"><span class="dot"></span><span class="v3-brand-text"><span class="name">KrishnaS Hemanth</span></span></a><p>Product Owner building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p></div>
+      <div class="v3-footer-col"><h4>Work</h4><a href="./selected-work.html">All case studies</a><a href="./case-quote-automation.html">Quote Automation</a><a href="./expertise.html">Expertise</a></div>
+      <div class="v3-footer-col"><h4>Deep dives</h4><a href="./about.html">About &amp; Timeline</a><a href="./about.html#principles">Principles</a><a href="./resume.html">Resume</a></div>
+      <div class="v3-footer-col wide"><h4>Connect</h4><a href="mailto:krishnashemanth@gmail.com">Email</a><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
-  </div>
-</section>
-
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">05</span>My role</div>
-      <div>
-        <h2 class="v2-cs-h">What I owned, solo.</h2>
-        <div class="v2-role-list">
-          <div class="v2-role-item"><div class="k">Discovery</div><div>Two weeks of structured self-observation; catalogued every friction point as a backlog item.</div></div>
-          <div class="v2-role-item"><div class="k">Product design</div><div>Modeled follow-ups as a first-class type with owner and source; kept a simple four-status task model over a granular one.</div></div>
-          <div class="v2-role-item"><div class="k">Full build</div><div>100% of the vanilla JS/HTML/CSS build: the task engine, follow-up board, notes, link hub, and a hand-rolled charting dashboard.</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="v2-cs-section" style="border-bottom:none;">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">06</span>Lessons</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">Constraints are a design input, not an obstacle.</h2>
-        <p><strong>The cheapest tool that ships beats the ideal tool that doesn't.</strong> Choosing zero-approval, zero-infra architecture was the actual reason this exists in daily use instead of as an unbuilt "someday" idea.</p>
-        <p><strong>Model the user's mental model, not the domain's vocabulary.</strong> "Blocker" and "dependency" felt like statuses but were really reasons, a small reframe that removed constant classification hesitation.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="v2-next">
-  <div class="container">
-    <div class="v2-next-row">
-      <a href="./case-compliance-stop.html" class="big">Next case · The Report-Generation POC I Stopped <span>→</span></a>
-      <a href="./index.html#work" style="font-size:13.5px;color:var(--gray);">← All work</a>
-    </div>
-  </div>
-</section>
-
-<section class="v2-cta">
-  <div class="container">
-    <h2>Let's build what <em>actually ships</em>.</h2>
-    <div class="row">
-      <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">krishnashemanth@gmail.com</a>
-      <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn →</a>
-    </div>
-  </div>
-</section>
-
-<footer class="v2-footer">
-  <div class="container">
-    <div class="v2-footer-grid">
-      <div>
-        <a href="./index.html" class="v2-brand" style="margin-bottom:18px;display:inline-flex;">KrishnaS Hemanth<span class="dot">.</span></a>
-        <p class="blurb">Product Manager building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p>
-      </div>
-      <div>
-        <h4>Work</h4>
-        <ul>
-          <li><a href="./case-quote-automation.html">AI Quote Automation</a></li>
-          <li><a href="./index.html#work">All case studies</a></li>
-          <li><a href="./about.html#principles">Principles</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="mailto:krishnashemanth@gmail.com">Email</a></li>
-          <li><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="v2-footer-bottom">
-      <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
-    </div>
+    <div class="v3-footer-bottom"><span>© <span id="v3-year">2026</span> Krishnasai Hemanth Randhi</span></div>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script>
-(function(){
-  var EMAIL = 'krishnashemanth@gmail.com';
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.setAttribute('title', 'Copy email ID');
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      var restore = a.innerHTML;
-      function done(){ a.innerHTML = 'Email copied ✓'; setTimeout(function(){ a.innerHTML = restore; }, 1500); }
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(EMAIL).then(done, function(){ window.location.href = 'mailto:' + EMAIL; });
-      } else { window.location.href = 'mailto:' + EMAIL; }
-    });
-  });
-})();
-</script>
-<script data-goatcounter="https://krishnas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

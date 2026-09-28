@@ -3,185 +3,155 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The $1M project I killed on purpose · Case Study | KrishnaS Hemanth</title>
+<title>The $1M Project I Killed on Purpose · Case Study | KrishnaS Hemanth</title>
 <meta name="description" content="Case study: recommending termination of a $1M AI initiative during discovery. PHI/PII compliance blockers and negative ROI." />
 <link rel="icon" type="image/png" href="./assets/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://krishnashemanth.github.io/case-killed-project.html">
-<meta property="og:title" content="The $1M project I killed on purpose · Case Study | KrishnaS Hemanth">
-<meta property="og:description" content="Case study: recommending termination of a $1M AI initiative during discovery. PHI/PII compliance blockers and negative ROI.">
-<meta property="og:image" content="https://krishnashemanth.github.io/assets/og.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The $1M project I killed on purpose · Case Study | KrishnaS Hemanth">
-<meta name="twitter:description" content="Case study: recommending termination of a $1M AI initiative during discovery. PHI/PII compliance blockers and negative ROI.">
-<meta name="twitter:image" content="https://krishnashemanth.github.io/assets/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
-<script defer src="./nav-scroll.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css?v=3">
 </head>
 <body>
 
-<nav class="v2-nav">
-  <div class="v2-nav-inner">
-    <a href="./index.html" class="v2-brand">KrishnaS Hemanth<span class="dot">.</span> <small>PM · AI · Regulated SaaS</small></a>
-    <div class="v2-links">
-      <a href="./index.html#work" class="active">Work</a>
-      <a href="./index.html#expertise">Expertise</a>
-      <a href="./about.html">About</a>
-      <a href="./resume.html">Resume</a>
-    </div>
-    <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">Let's talk</a>
-    <button class="v2-hamburger" aria-label="Menu" onclick="this.closest('.v2-nav').classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+<nav class="v3-nav">
+  <div class="v3-nav-inner">
+    <a href="./index.html" class="v3-brand"><span class="dot"></span><span class="v3-brand-text"><span class="name">KrishnaS Hemanth</span><span class="tag">PO · AI · Regulated SaaS</span></span></a>
+    <div class="v3-links"><a href="./index.html">Home</a><a href="./selected-work.html" class="active">Work</a><a href="./expertise.html">Expertise</a><a href="./about.html">About &amp; Timeline</a><a href="./resume.html">Resume</a></div>
+    <div class="v3-nav-cta"><a href="mailto:krishnashemanth@gmail.com" class="v3-btn v3-btn-primary">Get in touch</a></div>
+    <button class="v3-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
+  <div class="v3-mobile-menu"><a href="./index.html">Home</a><a href="./selected-work.html" class="active">Work</a><a href="./expertise.html">Expertise</a><a href="./about.html">About &amp; Timeline</a><a href="./resume.html">Resume</a><a href="mailto:krishnashemanth@gmail.com">Get in touch</a></div>
 </nav>
 
-<header class="v2-cs-hero">
+<header class="v3-cs-hero">
   <div class="container">
-    <p class="v2-breadcrumb"><a href="./index.html#work">← All work</a> &nbsp;·&nbsp; Case 03 of 09 · Shipped (a decision, not a feature)</p>
-    <div class="v2-meta-chips">
-      <span>Quantiphi</span><span>Healthcare / Life Sciences</span><span>Sr Business Analyst</span><span>2023 · Discovery phase</span>
+    <p class="v3-breadcrumb"><a href="./selected-work.html">← All work</a> &nbsp;·&nbsp; Case 07 of 08 · Shipped (a decision, not a feature)</p>
+    <div class="v3-cs-head-grid">
+      <div>
+        <h1 class="v3-h1">The $1M project I killed <em style="font-style:normal;color:var(--error-600);">on purpose</em>.</h1>
+        <p class="v3-body-lg v3-muted" style="margin-top:12px;max-width:640px;">A well-scoped, technically exciting AI initiative. Compliance blockers we'd have hit at integration. A recommendation to terminate, before a single sprint was burned.</p>
+      </div>
+      <div class="v3-cs-meta-card">
+        <span class="v3-label-sm v3-muted">Context</span>
+        <div class="tags"><span class="v3-tag">Quantiphi</span><span class="v3-tag">Healthcare / Life Sciences</span><span class="v3-tag">Sr Business Analyst</span><span class="v3-tag">2023 · Discovery phase</span></div>
+      </div>
     </div>
-    <h1>The $1M project I killed <em>on purpose</em>.</h1>
-    <p class="v2-cs-dek">
-      A well-scoped, technically exciting AI initiative. Compliance blockers we'd have hit at integration. A recommendation to terminate, before a single sprint was burned.
-    </p>
-  </div>
+    </div>
 </header>
 
-<section class="v2-impact">
+<section data-screen-label="05 Impact strip" style="background:#fff;padding:32px 0;" class="v3-reveal">
   <div class="container">
-    <div class="v2-impact-grid" style="grid-template-columns:repeat(3,1fr);">
-      <div><div class="num"><em>$</em>1M</div><div class="lbl">Engineering spend<br />avoided</div></div>
-      <div><div class="num">0</div><div class="lbl">Sprints<br />wasted</div></div>
-      <div><div class="num">2 wks</div><div class="lbl">To surface<br />and recommend kill</div></div>
+    <div style="text-transform:uppercase;letter-spacing:2.5px;font-size:12px;font-weight:600;color:var(--green-600);margin-bottom:14px;">Impact · The $1M Project I Killed on Purpose</div>
+    <div class="impact-strip-grid">
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">$1M</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Engineering spend avoided</div>
+        
+      </div>
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">0</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">Sprints wasted</div>
+        
+      </div>
+      <div class="impact-item-success">
+        <div style="font-size:30px;font-weight:700;color:var(--navy-800);line-height:1;letter-spacing:-.5px;white-space:nowrap;">2 wks</div>
+        <div style="margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#212529;">To surface and recommend kill</div>
+        
+      </div>
     </div>
   </div>
 </section>
 
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">01</span>The setup</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">Everyone wanted this one to work.</h2>
+<div class="container v3-cs-body">
+  <aside class="v3-cs-side">
+    <div class="v3-cs-side-inner">
+      <div class="v3-cs-navcard">
+        <h4>On this page</h4>
+        <nav>
+          <a href="#setup">01 · The setup</a>
+          <a href="#surfaced">02 · What surfaced</a>
+          <a href="#recommendation">03 · The recommendation</a>
+          <a href="#lessons">04 · Lessons</a>
+        </nav>
+      </div>
+    </div>
+  </aside>
+
+  <div>
+    <article class="v3-chapter" id="setup">
+      <div class="v3-chapter-head"><span class="num">Chapter 01</span><span class="rule"></span><span class="cat">The setup</span></div>
+      <h2 class="v3-h2">Everyone wanted this one to work.</h2>
+      <div class="v3-prose">
         <p>A healthcare client asked us to scope an AI system that would aggregate patient-level data across provider networks to surface care-gap opportunities. Leadership was bullish. Engineering had a clear architecture. The pilot would have hit $1M in commitments before the first integration sprint.</p>
         <p>My job in discovery was to de-risk, not to cheerlead.</p>
       </div>
-    </div>
-  </div>
-</section>
+    </article>
 
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">02</span>What surfaced</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">Two weeks in, I found the math didn't work.</h2>
+    <article class="v3-chapter" id="surfaced">
+      <div class="v3-chapter-head"><span class="num">Chapter 02</span><span class="rule"></span><span class="cat">Discovery</span></div>
+      <h2 class="v3-h2">Two weeks in, I found the math didn't work.</h2>
+      <div class="v3-prose">
         <p>The data sources the system needed contained PHI and PII that couldn't leave the originating networks without BAA renegotiation, a 6-to-12 month legal path with uncertain outcome. Even with data in place, the ROI model broke: projected uplift on care-gap closure priced against operating cost fell below the break-even line in every scenario I could build.</p>
-        <div class="v2-callout">
-          <strong>The uncomfortable finding:</strong> the product could ship. It could be demo'd. It could not be sold sustainably, and it could not be operated without creating compliance exposure that outweighed any upside.
-        </div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="v3-honest-box">
+        <p><strong>The uncomfortable finding:</strong> the product could ship. It could be demo'd. It could not be sold sustainably, and it could not be operated without creating compliance exposure that outweighed any upside.</p>
+      </div>
+    </article>
 
-<section class="v2-cs-section">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">03</span>The recommendation</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">Kill it. Write down why. Move the team.</h2>
-        <p>I wrote a one-page kill memo: compliance blockers, revised ROI model, alternatives considered. I presented it to the steering group expecting pushback. I got questions, good ones, and then a decision to terminate. The team rotated onto a parallel initiative that shipped three months later.</p>
-        <div class="v2-pullquote">"ROI outweighs novelty. Demos don't ship; defensible economics do."</div>
+    <article class="v3-chapter" id="recommendation">
+      <div class="v3-chapter-head"><span class="num">Chapter 03</span><span class="rule"></span><span class="cat">The decision</span></div>
+      <h2 class="v3-h2">Kill it. Write down why. Move the team.</h2>
+      <div class="v3-prose">
+        <p>I wrote a one-page kill memo: the compliance blockers, the ROI model with every scenario I'd run, and the recommendation stated plainly, no alternative scope or workaround, because none existed once the legal path and the unit economics both failed. I presented it to the steering group expecting pushback. I got questions, good ones, and then a decision to terminate. The team rotated onto a parallel initiative that shipped three months later.</p>
+      </div>
+      <div class="v3-pullquote-card">
+        <div class="eyebrow">✦ Said plainly</div>
+        <blockquote>"ROI outweighs novelty. Demos don't ship; defensible economics do."</blockquote>
         <p>This is the case study I'm most proud of. Anyone can ship features. Not everyone will recommend against shipping when the org has already imagined the launch.</p>
       </div>
-    </div>
-  </div>
-</section>
+    </article>
 
-<section class="v2-cs-section" style="border-bottom:none;">
-  <div class="container">
-    <div class="v2-cs-grid">
-      <div class="v2-cs-label"><span class="num">04</span>Lessons</div>
-      <div class="v2-prose">
-        <h2 class="v2-cs-h">What this taught me about discovery.</h2>
+    <article class="v3-chapter" id="lessons">
+      <div class="v3-chapter-head"><span class="num">Chapter 04</span><span class="rule"></span><span class="cat">Lessons</span></div>
+      <h2 class="v3-h2">What this taught me about discovery.</h2>
+      <div class="v3-prose">
         <p><strong>Compliance isn't a Phase 2 problem.</strong> In regulated domains, the legal path determines the critical path. Validate BAAs, DPAs, and data-residency before you validate the feature.</p>
-        <p><strong>ROI modeling is a PM deliverable.</strong> If you can't draw the unit economics in discovery, you can't defend them in executive review. Learn the spreadsheet.</p>
-        <p><strong>The kill memo is a PM artifact.</strong> A crisp, written recommendation against shipping is one of the hardest and most valuable things a PM produces. Most don't. The ones who do become the ones leadership trusts.</p>
+        <p><strong>ROI modeling is a PM deliverable.</strong> If you can't draw the unit economics in discovery, you can't defend them in executive review.</p>
+        <p><strong>The kill memo is a PM artifact.</strong> A crisp, written recommendation against shipping is one of the hardest and most valuable things a PM produces.</p>
+      </div>
+    </article>
+
+    <a class="v3-next-teaser v3-mt-lg" href="./case-command-center.html">
+      <div><span class="v3-eyebrow" style="color:var(--outline);">Next case</span><h3 class="v3-h3">Command Center</h3><p class="v3-body-sm">An offline-first workspace unifying daily tasks and links.</p></div>
+      <div class="arrow">&rarr;</div>
+    </a>
+  </div>
+</div>
+
+<section class="v3-cta-band">
+  <div class="container">
+    <div class="v3-cta-card">
+      <div><h2 class="v3-h2">Let's build what <em style="color:var(--green-tint);font-style:normal;">actually ships</em>.</h2></div>
+      <div class="v3-cta-actions">
+        <a href="mailto:krishnashemanth@gmail.com" class="v3-btn v3-btn-primary">krishnashemanth@gmail.com</a>
+        <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="v3-btn v3-btn-outline-light">LinkedIn →</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="v2-next">
+<footer class="v3-footer">
   <div class="container">
-    <div class="v2-next-row">
-      <a href="./case-phoenix.html" class="big">Next case · Phoenix: Legacy Modernization Prototype <span>→</span></a>
-      <a href="./index.html#work" style="font-size:13.5px;color:var(--gray);">← All work</a>
+    <div class="v3-footer-grid">
+      <div class="v3-footer-brand"><a href="./index.html" class="v3-brand" style="margin-bottom:14px;"><span class="dot"></span><span class="v3-brand-text"><span class="name">KrishnaS Hemanth</span></span></a><p>Product Owner building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p></div>
+      <div class="v3-footer-col"><h4>Work</h4><a href="./selected-work.html">All case studies</a><a href="./case-quote-automation.html">Quote Automation</a><a href="./expertise.html">Expertise</a></div>
+      <div class="v3-footer-col"><h4>Deep dives</h4><a href="./about.html">About &amp; Timeline</a><a href="./about.html#principles">Principles</a><a href="./resume.html">Resume</a></div>
+      <div class="v3-footer-col wide"><h4>Connect</h4><a href="mailto:krishnashemanth@gmail.com">Email</a><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
-  </div>
-</section>
-
-<section class="v2-cta">
-  <div class="container">
-    <h2>Let's build what <em>actually ships</em>.</h2>
-    <div class="row">
-      <a href="mailto:krishnashemanth@gmail.com" class="btn btn-green">krishnashemanth@gmail.com</a>
-      <a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn →</a>
-    </div>
-  </div>
-</section>
-
-<footer class="v2-footer">
-  <div class="container">
-    <div class="v2-footer-grid">
-      <div>
-        <a href="./index.html" class="v2-brand" style="margin-bottom:18px;display:inline-flex;">KrishnaS Hemanth<span class="dot">.</span></a>
-        <p class="blurb">Product Manager building AI products for regulated enterprise SaaS. Every metric on this site is verified; estimates are labeled as estimates.</p>
-      </div>
-      <div>
-        <h4>Work</h4>
-        <ul>
-          <li><a href="./case-quote-automation.html">AI Quote Automation</a></li>
-          <li><a href="./index.html#work">All case studies</a></li>
-          <li><a href="./about.html#principles">Principles</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="mailto:krishnashemanth@gmail.com">Email</a></li>
-          <li><a href="https://linkedin.com/in/krishnashemanth" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="v2-footer-bottom">
-      <span>© <span id="year">2026</span> Krishnasai Hemanth Randhi</span>
-    </div>
+    <div class="v3-footer-bottom"><span>© <span id="v3-year">2026</span> Krishnasai Hemanth Randhi</span></div>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script>
-(function(){
-  var EMAIL = 'krishnashemanth@gmail.com';
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.setAttribute('title', 'Copy email ID');
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      var restore = a.innerHTML;
-      function done(){ a.innerHTML = 'Email copied ✓'; setTimeout(function(){ a.innerHTML = restore; }, 1500); }
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(EMAIL).then(done, function(){ window.location.href = 'mailto:' + EMAIL; });
-      } else { window.location.href = 'mailto:' + EMAIL; }
-    });
-  });
-})();
-</script>
-<script data-goatcounter="https://krishnas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
